@@ -98,6 +98,7 @@ class Contract extends Admin_Controller
 					'contract_date' => $row->contract_date,
 					'start_date' => $row->start_date,
 					'terminate_date' => $row->terminate_date,
+					'status_data' => $row->status_data,
 
                 );
             }
@@ -113,7 +114,9 @@ class Contract extends Admin_Controller
         $row = $this->Contract_model->get_by_id($id);
 
         if ($row) {
+            $this->Contract_model->set_primary_key('contract_id');
             $this->Contract_model->delete($id);
+            $this->Contract_model->set_primary_key('id');
             $this->session->set_flashdata('message', 'Delete Record Success');
             redirect(site_url('admin/contract'));
         } else {
@@ -125,8 +128,10 @@ class Contract extends Admin_Controller
     public function create()
     {
         $form = $this->form_builder->create_form();
+
         $this->add_script($this->datepicker_script,FALSE,'foot');
         $this->add_script($this->phoneformat_script,FALSE,'foot');
+        $this->add_stylesheet($this->stylesheet,FALSE,'screen');
 
         $userid = $this->ion_auth->get_user_id();
         $username = $this->ion_auth->get_user_name();
@@ -146,6 +151,7 @@ class Contract extends Admin_Controller
 			$contract_date = $this->input->post('contract_date');
 			$start_date = $this->input->post('start_date');
 			$terminate_date = $this->input->post('terminate_date');
+			$status_data = $this->input->post('status_data');
 
     		$data = $this->Contract_model->
         	insert(array
@@ -159,10 +165,10 @@ class Contract extends Admin_Controller
 					'company_phone2' => $company_phone2,
 					'pic_phone' => $pic_phone,
 					'email_address' => $email_address,
-                    'contract_date' => ($contract_date === '0000-00-00' || empty($contract_date))? NULL:$contract_date,
-                    'start_date' => ($start_date === '0000-00-00' || empty($start_date))? NULL:$start_date,
-                    'terminate_date' => ($terminate_date === '0000-00-00' || empty($terminate_date))? NULL:$terminate_date,
-                    'status_data' => 'Aktif',
+					'contract_date' => $contract_date,
+					'start_date' => $start_date,
+					'terminate_date' => $terminate_date,
+					'status_data' => $status_data,
 					'create_userid' => $userid,
 					'update_userid' => $userid,
 					'create_time' => time(),
@@ -194,8 +200,10 @@ class Contract extends Admin_Controller
     public function update($id)
     {
         $form = $this->form_builder->create_form();
+
         $this->add_script($this->datepicker_script,FALSE,'foot');
         $this->add_script($this->phoneformat_script,FALSE,'foot');
+        $this->add_stylesheet($this->stylesheet,FALSE,'screen');
 
         $userid = $this->ion_auth->get_user_id();
         $username = $this->ion_auth->get_user_name();
@@ -215,7 +223,7 @@ class Contract extends Admin_Controller
 			$contract_date = $this->input->post('contract_date');
 			$start_date = $this->input->post('start_date');
 			$terminate_date = $this->input->post('terminate_date');
-            $status_data = $this->input->post('status_data');
+			$status_data = $this->input->post('status_data');
 
             $this->Contract_model->set_primary_key('contract_id');
 
@@ -232,10 +240,10 @@ class Contract extends Admin_Controller
 					'company_phone2' => $company_phone2,
 					'pic_phone' => $pic_phone,
 					'email_address' => $email_address,
-					'contract_date' => ($contract_date === '0000-00-00' || empty($contract_date))? NULL:$contract_date,
-					'start_date' => ($start_date === '0000-00-00' || empty($start_date))? NULL:$start_date,
-					'terminate_date' => ($terminate_date === '0000-00-00' || empty($terminate_date))? NULL:$terminate_date,
-                    'status_data' => $status_data,
+					'contract_date' => $contract_date,
+					'start_date' => $start_date,
+					'terminate_date' => $terminate_date,
+					'status_data' => $status_data,
 					'update_userid' => $userid,
 					'update_time' => time(),
 				)
@@ -275,14 +283,13 @@ class Contract extends Admin_Controller
 					'contract_date' => $row->contract_date,
 					'start_date' => $row->start_date,
 					'terminate_date' => $row->terminate_date,
-                    'status_data' => $row->status_data,
+					'status_data' => $row->status_data,
 					'button' => 'Update',
                 );
             }
 
         }
 
-        $this->mViewData['status_list'] = $this->common_ref->status_list();
         $this->mViewData['contract'] = $data;
         $this->mPageTitle = 'Ubah Profil Grosir';
         $this->mViewData['form'] = $form;
@@ -338,7 +345,27 @@ Please copy this section into ../application/modules/admin/config/form_validatio
         	array(
             	'field'		 => 'email_address',
             	'label'		 => 'Email',
-            	'rules'		 => 'trim|required|valid_email',
+            	'rules'		 => 'trim|required',
+        	),
+        	array(
+            	'field'		 => 'contract_date',
+            	'label'		 => 'Tanggal Persetujuan Kontrak',
+            	'rules'		 => 'trim|required',
+        	),
+        	array(
+            	'field'		 => 'start_date',
+            	'label'		 => 'Tanggal Awal',
+            	'rules'		 => 'trim|required',
+        	),
+        	array(
+            	'field'		 => 'terminate_date',
+            	'label'		 => 'Tanggal Berhenti Kontrak',
+            	'rules'		 => 'trim|required',
+        	),
+        	array(
+            	'field'		 => 'status_data',
+            	'label'		 => 'Status Data',
+            	'rules'		 => 'trim|required',
         	),
         ),
 
@@ -387,7 +414,27 @@ Please copy this section into ../application/modules/admin/config/form_validatio
         	array(
             	'field'		 => 'email_address',
             	'label'		 => 'Email',
-            	'rules'		 => 'trim|required|valid_email',
+            	'rules'		 => 'trim|required',
+        	),
+        	array(
+            	'field'		 => 'contract_date',
+            	'label'		 => 'Tanggal Persetujuan Kontrak',
+            	'rules'		 => 'trim|required',
+        	),
+        	array(
+            	'field'		 => 'start_date',
+            	'label'		 => 'Tanggal Awal',
+            	'rules'		 => 'trim|required',
+        	),
+        	array(
+            	'field'		 => 'terminate_date',
+            	'label'		 => 'Tanggal Berhenti Kontrak',
+            	'rules'		 => 'trim|required',
+        	),
+        	array(
+            	'field'		 => 'status_data',
+            	'label'		 => 'Status Data',
+            	'rules'		 => 'trim|required',
         	),
         ),
 
@@ -397,4 +444,4 @@ Please copy this section into ../application/modules/admin/config/form_validatio
 /* End of file Contract.php */
 /* Location: ./application/controllers/Contract.php */
 /* Please DO NOT modify this information : */
-/* Generated by Harviacode Custom Codeigniter CRUD Generator 2018-07-24 12:44:03 */
+/* Generated by Harviacode Custom Codeigniter CRUD Generator 2018-07-26 18:02:06 */

@@ -30,7 +30,7 @@ $string .=
                 <div class=\"table-responsive\">";
 
 $string .= "\n\t    
-        <table class=\"table table-bordered table-striped\" id=\"mytable\" style=\"width: 100%\">
+        <table class=\"table table-bordered table-striped nowrap\" id=\"mytable\" style=\"width: 100%\">
             <thead>
                 <tr>
                     <th width=\"45px\">No</th>";

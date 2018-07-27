@@ -18,19 +18,20 @@
             <thead>
                 <tr>
                     <th width="45px">No</th>
-                    <th>Aksi</th>
-        		    <th>Nama Grosir</th>
-        		    <th>Nama Database</th>
-        		    <th>Server IP</th>
-        		    <th>Nama Pemilik</th>
-        		    <th>Alamat Grosir</th>
-        		    <th>Telepon</th>
-        		    <th>Telepon Lain</th>
-        		    <th>Hand Phone</th>
-        		    <th>Email</th>
-        		    <th>Tanggal Persetujuan Kontrak</th>
-        		    <th>Tanggal Awal</th>
-        		    <th>Tanggal Berhenti Kontrak</th>
+		    <th>Nama Grosir</th>
+		    <th>Nama Database</th>
+		    <th>Server IP</th>
+		    <th>Nama Pemilik</th>
+		    <th>Alamat Grosir</th>
+		    <th>Telepon</th>
+		    <th>Telepon Lain</th>
+		    <th>Hand Phone</th>
+		    <th>Email</th>
+		    <th>Tanggal Persetujuan Kontrak</th>
+		    <th>Tanggal Awal</th>
+		    <th>Tanggal Berhenti Kontrak</th>
+		    <th>Status Data</th>
+		    <th width="80px">Aksi</th>
                 </tr>
             </thead>
                     </table>

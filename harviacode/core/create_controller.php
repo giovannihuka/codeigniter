@@ -157,7 +157,9 @@ $string .= "\n
         \$row = \$this->".$m."->get_by_id(\$id);
 
         if (\$row) {
+            \$this->".$m."->set_primary_key('".$pk."');
             \$this->".$m."->delete(\$id);
+            \$this->".$m."->set_primary_key('id');
             \$this->session->set_flashdata('message', 'Delete Record Success');
             redirect(site_url('admin/$c_url'));
         } else {
@@ -291,6 +293,10 @@ $string_create = "
     {
         \$form = \$this->form_builder->create_form();
 
+        \$this->add_script(\$this->datepicker_script,FALSE,'foot');
+        \$this->add_script(\$this->phoneformat_script,FALSE,'foot');
+        \$this->add_stylesheet(\$this->stylesheet,FALSE,'screen');
+
         \$userid = \$this->ion_auth->get_user_id();
         \$username = \$this->ion_auth->get_user_name();
         \$contractid = \$this->ion_auth->get_contract_id();
@@ -353,6 +359,10 @@ $string_update .= "
     public function update(\$id)
     {
         \$form = \$this->form_builder->create_form();
+
+        \$this->add_script(\$this->datepicker_script,FALSE,'foot');
+        \$this->add_script(\$this->phoneformat_script,FALSE,'foot');
+        \$this->add_stylesheet(\$this->stylesheet,FALSE,'screen');
 
         \$userid = \$this->ion_auth->get_user_id();
         \$username = \$this->ion_auth->get_user_name();

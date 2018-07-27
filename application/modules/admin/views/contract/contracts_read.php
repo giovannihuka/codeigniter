@@ -18,6 +18,7 @@
 				<?php echo $form->bs3_text('Tanggal Persetujuan Kontrak','contract_date',$contract['contract_date'],'readonly'); ?>
 				<?php echo $form->bs3_text('Tanggal Awal','start_date',$contract['start_date'],'readonly'); ?>
 				<?php echo $form->bs3_text('Tanggal Berhenti Kontrak','terminate_date',$contract['terminate_date'],'readonly'); ?>
+				<?php echo $form->bs3_text('Status Data','status_data',$contract['status_data'],'readonly'); ?>
 				<?php echo '<button type="reset" class="btn btn-default" onclick="location.href=\'contract\'">Back</button>' ?>
             	<?php echo $form->close(); ?>
             </div>

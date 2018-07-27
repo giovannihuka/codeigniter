@@ -60,6 +60,10 @@ $config['ci_bootstrap'] = array(
 				'label'	=> 'English',
 				'value'	=> 'english'
 			),
+			'id' => array(
+				'label'	=> 'Indonesian',
+				'value'	=> 'indonesian'
+			),
 			'zh' => array(
 				'label'	=> '繁體中文',
 				'value'	=> 'traditional-chinese'
