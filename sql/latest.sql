@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `admin_users` (
 -- Dumping data for table tester_db.admin_users: ~4 rows (approximately)
 /*!40000 ALTER TABLE `admin_users` DISABLE KEYS */;
 INSERT INTO `admin_users` (`id`, `ip_address`, `contract_id`, `username`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `first_name`, `middle_name`, `last_name`, `color`) VALUES
-	(1, '127.0.0.1', 1, 'webmaster', '$2y$08$/X5gzWjesYi78GqeAv5tA.dVGBVP7C1e1PzqnYCVe5s1qhlDIPPES', NULL, NULL, NULL, NULL, NULL, NULL, 1451900190, 1532601194, 1, 'Webmaster', NULL, '1', NULL),
+	(1, '127.0.0.1', 1, 'webmaster', '$2y$08$/X5gzWjesYi78GqeAv5tA.dVGBVP7C1e1PzqnYCVe5s1qhlDIPPES', NULL, NULL, NULL, NULL, NULL, NULL, 1451900190, 1532665890, 1, 'Webmaster', NULL, '1', NULL),
 	(2, '127.0.0.1', 1, 'admin', '$2y$08$7Bkco6JXtC3Hu6g9ngLZDuHsFLvT7cyAxiz1FzxlX5vwccvRT7nKW', NULL, NULL, NULL, NULL, NULL, NULL, 1451900228, 1526451913, 1, 'Admin', NULL, '', NULL),
 	(3, '127.0.0.1', 1, 'manager', '$2y$08$snzIJdFXvg/rSHe0SndIAuvZyjktkjUxBXkrrGdkPy1K6r5r/dMLa', NULL, NULL, NULL, NULL, NULL, NULL, 1451900430, 1465489585, 1, 'Manager', NULL, '', NULL),
 	(4, '127.0.0.1', 1, 'staff', '$2y$08$NigAXjN23CRKllqe3KmjYuWXD5iSRPY812SijlhGeKfkrMKde9da6', NULL, NULL, NULL, NULL, NULL, 'DE7EFqFgBfjOEcqU7a9kEO', 1451900439, 1532422941, 1, 'Staff', NULL, '', NULL);
@@ -160,6 +160,7 @@ CREATE TABLE IF NOT EXISTS `api_logs` (
 CREATE TABLE IF NOT EXISTS `contracts` (
   `contract_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `company_name` varchar(128) DEFAULT NULL COMMENT 'Nama Grosir',
+  `company_status` int(10) unsigned DEFAULT NULL COMMENT 'Status Grosir',
   `db_name` varchar(20) DEFAULT NULL COMMENT 'Nama Database',
   `server_ip` varchar(20) DEFAULT NULL COMMENT 'Server IP',
   `pic_name` varchar(128) DEFAULT NULL COMMENT 'Nama Pemilik',
@@ -176,16 +177,18 @@ CREATE TABLE IF NOT EXISTS `contracts` (
   `update_userid` int(11) unsigned DEFAULT NULL,
   `create_time` int(11) unsigned DEFAULT NULL,
   `update_time` int(11) unsigned DEFAULT NULL,
-  PRIMARY KEY (`contract_id`)
+  PRIMARY KEY (`contract_id`),
+  KEY `FK_contracts_contract_status` (`company_status`),
+  CONSTRAINT `FK_contracts_contract_status` FOREIGN KEY (`company_status`) REFERENCES `ref_constatus` (`contract_statusid`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='Profil Grosir';
 
 -- Dumping data for table tester_db.contracts: ~4 rows (approximately)
 /*!40000 ALTER TABLE `contracts` DISABLE KEYS */;
-INSERT INTO `contracts` (`contract_id`, `company_name`, `db_name`, `server_ip`, `pic_name`, `company_address`, `company_phone1`, `company_phone2`, `pic_phone`, `email_address`, `contract_date`, `start_date`, `terminate_date`, `status_data`, `create_userid`, `update_userid`, `create_time`, `update_time`) VALUES
-	(1, 'Personal Corp', 'tester_db', '127.0.0.1', 'Owner', 'Jakarta', '', '', '(0813) 830-55283', 'giovanni.nttdata@gmail.com', NULL, NULL, NULL, 'Aktif', 1, 1, 1526284992, 1532485440),
-	(2, 'NTT Data Indonesia', 'ndid_db', '127.0.0.1', 'NDID Owner', 'BNI 46', '', '', '(0813) 830-55283', 'giovanni.huka@nttdata.com', '2018-08-02', '2018-08-06', NULL, 'Aktif', 1, 1, 1532485175, 1532566682),
-	(3, 'Testing 001', 'test001_db', '127.0.0.1', 'Owner Test 001', 'Cibubur', '', '', '(0812) 345-67890', 'test001@gmail.com', NULL, NULL, NULL, 'Aktif', 1, 1, 1532583306, 1532583306),
-	(4, 'Testing 002', 'test001_db2', '127.0.0.1', 'Owner Test 002', 'Cibubur Alternatif', '', '', '(0812) 345-67891', 'test002@gmail.com', NULL, NULL, NULL, 'Aktif', 1, 1, 1532586062, 1532586062);
+INSERT INTO `contracts` (`contract_id`, `company_name`, `company_status`, `db_name`, `server_ip`, `pic_name`, `company_address`, `company_phone1`, `company_phone2`, `pic_phone`, `email_address`, `contract_date`, `start_date`, `terminate_date`, `status_data`, `create_userid`, `update_userid`, `create_time`, `update_time`) VALUES
+	(1, 'Personal Corp', NULL, 'tester_db', '127.0.0.1', 'Owner', 'Jakarta', '', '', '(0813) 830-55283', 'giovanni.nttdata@gmail.com', NULL, NULL, NULL, 'Aktif', 1, 1, 1526284992, 1532485440),
+	(2, 'NTT Data Indonesia', NULL, 'ndid_db', '127.0.0.1', 'NDID Owner', 'BNI 46', '', '', '(0813) 830-55283', 'giovanni.huka@nttdata.com', '2018-08-02', '2018-08-06', NULL, 'Aktif', 1, 1, 1532485175, 1532566682),
+	(3, 'Testing 001', NULL, 'test001_db', '127.0.0.1', 'Owner Test 001', 'Cibubur', '', '', '(0812) 345-67890', 'test001@gmail.com', NULL, NULL, NULL, 'Aktif', 1, 1, 1532583306, 1532583306),
+	(4, 'Testing 002', NULL, 'test001_db2', '127.0.0.1', 'Owner Test 002', 'Cibubur Alternatif', '', '', '(0812) 345-67891', 'test002@gmail.com', NULL, NULL, NULL, 'Aktif', 1, 1, 1532586062, 1532586062);
 /*!40000 ALTER TABLE `contracts` ENABLE KEYS */;
 
 -- Dumping structure for table tester_db.dev_columns
@@ -257,6 +260,20 @@ CREATE TABLE IF NOT EXISTS `login_attempts` (
 -- Dumping data for table tester_db.login_attempts: ~0 rows (approximately)
 /*!40000 ALTER TABLE `login_attempts` DISABLE KEYS */;
 /*!40000 ALTER TABLE `login_attempts` ENABLE KEYS */;
+
+-- Dumping structure for table tester_db.ref_constatus
+CREATE TABLE IF NOT EXISTS `ref_constatus` (
+  `contract_statusid` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `status_name` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`contract_statusid`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='Option of Contract Status';
+
+-- Dumping data for table tester_db.ref_constatus: ~2 rows (approximately)
+/*!40000 ALTER TABLE `ref_constatus` DISABLE KEYS */;
+INSERT INTO `ref_constatus` (`contract_statusid`, `status_name`) VALUES
+	(1, 'Contract Base'),
+	(2, 'Pemanent Base');
+/*!40000 ALTER TABLE `ref_constatus` ENABLE KEYS */;
 
 -- Dumping structure for table tester_db.ref_districts
 CREATE TABLE IF NOT EXISTS `ref_districts` (
@@ -8062,6 +8079,21 @@ INSERT INTO `ref_regencies` (`id`, `province_id`, `name`) VALUES
 	('9436', '94', 'Kabupaten Deiyai'),
 	('9471', '94', 'Kota Jayapura');
 /*!40000 ALTER TABLE `ref_regencies` ENABLE KEYS */;
+
+-- Dumping structure for table tester_db.ref_status
+CREATE TABLE IF NOT EXISTS `ref_status` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `string_status` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='Option for Status Information';
+
+-- Dumping data for table tester_db.ref_status: ~2 rows (approximately)
+/*!40000 ALTER TABLE `ref_status` DISABLE KEYS */;
+INSERT INTO `ref_status` (`id`, `string_status`) VALUES
+	(1, 'Data Baru'),
+	(2, 'Aktif'),
+	(3, 'Tidak Aktif');
+/*!40000 ALTER TABLE `ref_status` ENABLE KEYS */;
 
 -- Dumping structure for table tester_db.ref_villages
 CREATE TABLE IF NOT EXISTS `ref_villages` (
@@ -88612,21 +88644,6 @@ INSERT INTO `ref_villages` (`id`, `district_id`, `name`) VALUES
 	('9471040007', '9471040', 'Tanjung Ria'),
 	('9471040008', '9471040', 'Kampung Kayobatu');
 /*!40000 ALTER TABLE `ref_villages` ENABLE KEYS */;
-
--- Dumping structure for table tester_db.status_datas
-CREATE TABLE IF NOT EXISTS `status_datas` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `string_status` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='Option for Status Information';
-
--- Dumping data for table tester_db.status_datas: ~3 rows (approximately)
-/*!40000 ALTER TABLE `status_datas` DISABLE KEYS */;
-INSERT INTO `status_datas` (`id`, `string_status`) VALUES
-	(1, 'Data Baru'),
-	(2, 'Aktif'),
-	(3, 'Tidak Aktif');
-/*!40000 ALTER TABLE `status_datas` ENABLE KEYS */;
 
 -- Dumping structure for table tester_db.users
 CREATE TABLE IF NOT EXISTS `users` (

@@ -37,7 +37,7 @@ class Common_model extends MY_Model
 
     function contract_status()
     {
-        $this->db->from('contract_status');
+        $this->db->from('ref_constatus');
         $this->db->order_by('contract_statusid','asc');
         $result = $this->db->get();
 
