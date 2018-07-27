@@ -35,6 +35,27 @@ class Common_model extends MY_Model
 
     }
 
+    function contract_status()
+    {
+        $this->db->from('contract_status');
+        $this->db->order_by('contract_statusid','asc');
+        $result = $this->db->get();
+
+        $return = array();
+        $return[0] = '-- Pilih Status --';
+
+        if ($result->num_rows() > 0) 
+        {
+            foreach ($result->result_array() as $row) {
+                # code...
+                $return[$row['contract_statusid']] = $row['status_name'];
+            }
+        }
+
+        return $return;
+
+    }
+
     /*
      *  Dropdown list nama propinsi
      */
@@ -141,7 +162,7 @@ class Common_model extends MY_Model
      */
     function status_list()
     {
-        $this->db->from('status_datas');
+        $this->db->from('ref_status');
         $this->db->order_by('id','asc');
         $result = $this->db->get();
 

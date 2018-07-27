@@ -37,6 +37,7 @@ $(document).ready(function() {
                             "orderable": false
                         },
 						{"data": "company_name"},
+						{"data": "company_status"},
 						{"data": "db_name"},
 						{"data": "server_ip"},
 						{"data": "pic_name"},

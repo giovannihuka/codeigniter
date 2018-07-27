@@ -87,6 +87,7 @@ class Contract extends Admin_Controller
                 $data = array (
 
 					'company_name' => $row->company_name,
+					'company_status' => $row->company_status,
 					'db_name' => $row->db_name,
 					'server_ip' => $row->server_ip,
 					'pic_name' => $row->pic_name,
@@ -125,6 +126,79 @@ class Contract extends Admin_Controller
         }
     }
 
+
+    public function excel()
+    {
+        $this->load->helper('exportexcel');
+        $namaFile = "contracts.xls";
+        $judul = "contracts";
+        $tablehead = 0;
+        $tablebody = 1;
+        $nourut = 1;
+        //penulisan header
+        header("Pragma: public");
+        header("Expires: 0");
+        header("Cache-Control: must-revalidate, post-check=0,pre-check=0");
+        header("Content-Type: application/force-download");
+        header("Content-Type: application/octet-stream");
+        header("Content-Type: application/download");
+        header("Content-Disposition: attachment;filename=" . $namaFile . "");
+        header("Content-Transfer-Encoding: binary ");
+
+        xlsBOF();
+
+        $kolomhead = 0;
+        xlsWriteLabel($tablehead, $kolomhead++, "No");
+	xlsWriteLabel($tablehead, $kolomhead++, "Company Name");
+	xlsWriteLabel($tablehead, $kolomhead++, "Company Status");
+	xlsWriteLabel($tablehead, $kolomhead++, "Db Name");
+	xlsWriteLabel($tablehead, $kolomhead++, "Server Ip");
+	xlsWriteLabel($tablehead, $kolomhead++, "Pic Name");
+	xlsWriteLabel($tablehead, $kolomhead++, "Company Address");
+	xlsWriteLabel($tablehead, $kolomhead++, "Company Phone1");
+	xlsWriteLabel($tablehead, $kolomhead++, "Company Phone2");
+	xlsWriteLabel($tablehead, $kolomhead++, "Pic Phone");
+	xlsWriteLabel($tablehead, $kolomhead++, "Email Address");
+	xlsWriteLabel($tablehead, $kolomhead++, "Contract Date");
+	xlsWriteLabel($tablehead, $kolomhead++, "Start Date");
+	xlsWriteLabel($tablehead, $kolomhead++, "Terminate Date");
+	xlsWriteLabel($tablehead, $kolomhead++, "Status Data");
+	xlsWriteLabel($tablehead, $kolomhead++, "Create Userid");
+	xlsWriteLabel($tablehead, $kolomhead++, "Update Userid");
+	xlsWriteLabel($tablehead, $kolomhead++, "Create Time");
+	xlsWriteLabel($tablehead, $kolomhead++, "Update Time");
+
+	foreach ($this->Contract_model->get_all() as $data) {
+            $kolombody = 0;
+
+            //ubah xlsWriteLabel menjadi xlsWriteNumber untuk kolom numeric
+            xlsWriteNumber($tablebody, $kolombody++, $nourut);
+	    xlsWriteLabel($tablebody, $kolombody++, $data->company_name);
+	    xlsWriteNumber($tablebody, $kolombody++, $data->company_status);
+	    xlsWriteLabel($tablebody, $kolombody++, $data->db_name);
+	    xlsWriteLabel($tablebody, $kolombody++, $data->server_ip);
+	    xlsWriteLabel($tablebody, $kolombody++, $data->pic_name);
+	    xlsWriteLabel($tablebody, $kolombody++, $data->company_address);
+	    xlsWriteLabel($tablebody, $kolombody++, $data->company_phone1);
+	    xlsWriteLabel($tablebody, $kolombody++, $data->company_phone2);
+	    xlsWriteLabel($tablebody, $kolombody++, $data->pic_phone);
+	    xlsWriteLabel($tablebody, $kolombody++, $data->email_address);
+	    xlsWriteLabel($tablebody, $kolombody++, $data->contract_date);
+	    xlsWriteLabel($tablebody, $kolombody++, $data->start_date);
+	    xlsWriteLabel($tablebody, $kolombody++, $data->terminate_date);
+	    xlsWriteLabel($tablebody, $kolombody++, $data->status_data);
+	    xlsWriteNumber($tablebody, $kolombody++, $data->create_userid);
+	    xlsWriteNumber($tablebody, $kolombody++, $data->update_userid);
+	    xlsWriteNumber($tablebody, $kolombody++, $data->create_time);
+	    xlsWriteNumber($tablebody, $kolombody++, $data->update_time);
+
+	    $tablebody++;
+            $nourut++;
+        }
+
+        xlsEOF();
+        exit();
+    }
     public function create()
     {
         $form = $this->form_builder->create_form();
@@ -140,6 +214,7 @@ class Contract extends Admin_Controller
         if ($form->validate())
         {
 			$company_name = $this->input->post('company_name');
+			$company_status = $this->input->post('company_status');
 			$db_name = $this->input->post('db_name');
 			$server_ip = $this->input->post('server_ip');
 			$pic_name = $this->input->post('pic_name');
@@ -157,6 +232,7 @@ class Contract extends Admin_Controller
         	insert(array
                 (
 					'company_name' => $company_name,
+					'company_status' => $company_status,
 					'db_name' => $db_name,
 					'server_ip' => $server_ip,
 					'pic_name' => $pic_name,
@@ -190,6 +266,8 @@ class Contract extends Admin_Controller
         }
 
         $this->mViewData['contract'] = $this->Contract_model->get_all();
+        $this->mViewData['contract_status'] = $this->common_ref->contract_status();
+        $this->mViewData['status_list'] = $this->common_ref->status_list();
         $this->mPageTitle = 'Registrasi Profil Grosir';
         $this->mViewData['form'] = $form;
         $this->render('contract/contracts_form');
@@ -212,6 +290,7 @@ class Contract extends Admin_Controller
         if ($form->validate())
         {
 			$company_name = $this->input->post('company_name');
+			$company_status = $this->input->post('company_status');
 			$db_name = $this->input->post('db_name');
 			$server_ip = $this->input->post('server_ip');
 			$pic_name = $this->input->post('pic_name');
@@ -232,6 +311,7 @@ class Contract extends Admin_Controller
                 array
                 (
 					'company_name' => $company_name,
+					'company_status' => $company_status,
 					'db_name' => $db_name,
 					'server_ip' => $server_ip,
 					'pic_name' => $pic_name,
@@ -272,6 +352,7 @@ class Contract extends Admin_Controller
 
         $data = array (
 					'company_name' => $row->company_name,
+					'company_status' => $row->company_status,
 					'db_name' => $row->db_name,
 					'server_ip' => $row->server_ip,
 					'pic_name' => $row->pic_name,
@@ -291,6 +372,8 @@ class Contract extends Admin_Controller
         }
 
         $this->mViewData['contract'] = $data;
+        $this->mViewData['contract_status'] = $this->common_ref->contract_status();
+        $this->mViewData['status_list'] = $this->common_ref->status_list();
         $this->mPageTitle = 'Ubah Profil Grosir';
         $this->mViewData['form'] = $form;
         $this->render('contract/contracts_update');
@@ -306,6 +389,11 @@ Please copy this section into ../application/modules/admin/config/form_validatio
             	'field'		 => 'company_name',
             	'label'		 => 'Nama Grosir',
             	'rules'		 => 'trim|required',
+        	),
+        	array(
+            	'field'		 => 'company_status',
+            	'label'		 => 'Status Grosir',
+            	'rules'		 => 'trim|required|numeric',
         	),
         	array(
             	'field'		 => 'db_name',
@@ -377,6 +465,11 @@ Please copy this section into ../application/modules/admin/config/form_validatio
             	'rules'		 => 'trim|required',
         	),
         	array(
+            	'field'		 => 'company_status',
+            	'label'		 => 'Status Grosir',
+            	'rules'		 => 'trim|required|numeric',
+        	),
+        	array(
             	'field'		 => 'db_name',
             	'label'		 => 'Nama Database',
             	'rules'		 => 'trim|required',
@@ -444,4 +537,4 @@ Please copy this section into ../application/modules/admin/config/form_validatio
 /* End of file Contract.php */
 /* Location: ./application/controllers/Contract.php */
 /* Please DO NOT modify this information : */
-/* Generated by Harviacode Custom Codeigniter CRUD Generator 2018-07-26 18:02:06 */
+/* Generated by Harviacode Custom Codeigniter CRUD Generator 2018-07-27 09:26:21 */

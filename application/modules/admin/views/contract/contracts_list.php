@@ -10,7 +10,8 @@
                             </div>
                         </div>
                         <div class="col-md-4 text-right">
-                            <?php echo anchor(site_url('admin/contract/create'), 'Create', 'class="btn btn-primary"'); ?>                    </div>
+                            <?php echo anchor(site_url('admin/contract/create'), 'Create', 'class="btn btn-primary"'); ?>
+		<?php echo anchor(site_url('admin/contract/excel'), 'Excel', 'class="btn btn-primary"'); ?>                    </div>
                 </div>
                 <div class="table-responsive">
 	    
@@ -19,6 +20,7 @@
                 <tr>
                     <th width="45px">No</th>
 		    <th>Nama Grosir</th>
+		    <th>Status Grosir</th>
 		    <th>Nama Database</th>
 		    <th>Server IP</th>
 		    <th>Nama Pemilik</th>

@@ -7,6 +7,7 @@
             <div class="box-body">
                 <?php echo $form->open(); ?>
 				<?php echo $form->bs3_text('Nama Grosir','company_name',$contract['company_name'],'readonly'); ?>
+				<?php echo $form->bs3_text('Status Grosir','company_status',$contract['company_status'],'readonly'); ?>
 				<?php echo $form->bs3_text('Nama Database','db_name',$contract['db_name'],'readonly'); ?>
 				<?php echo $form->bs3_text('Server IP','server_ip',$contract['server_ip'],'readonly'); ?>
 				<?php echo $form->bs3_text('Nama Pemilik','pic_name',$contract['pic_name'],'readonly'); ?>

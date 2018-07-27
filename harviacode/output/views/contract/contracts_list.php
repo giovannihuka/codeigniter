@@ -14,11 +14,12 @@
                 </div>
                 <div class="table-responsive">
 	    
-        <table class="table table-bordered table-striped" id="mytable" style="width: 100%">
+        <table class="table table-bordered table-striped nowrap" id="mytable" style="width: 100%">
             <thead>
                 <tr>
                     <th width="45px">No</th>
 		    <th>Nama Grosir</th>
+		    <th>Status Grosir</th>
 		    <th>Nama Database</th>
 		    <th>Server IP</th>
 		    <th>Nama Pemilik</th>

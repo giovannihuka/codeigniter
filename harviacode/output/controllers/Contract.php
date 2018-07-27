@@ -15,11 +15,13 @@ class Contract extends Admin_Controller
 
     private $script = array(
         'assets/datatables/DataTables-1.10.16/js/jquery.dataTables.min.js',
+        'assets/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js',
         'assets/dist/admin/contract.js',
     ); 
 
     private $stylesheet = array(
-        'assets/datatables/DataTables-1.10.16/css/jquery.dataTables.min.css',
+        // 'assets/datatables/DataTables-1.10.16/css/jquery.dataTables.min.css',
+        'assets/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css',
     );
 
     private $datepicker_script = array(
@@ -85,6 +87,7 @@ class Contract extends Admin_Controller
                 $data = array (
 
 					'company_name' => $row->company_name,
+					'company_status' => $row->company_status,
 					'db_name' => $row->db_name,
 					'server_ip' => $row->server_ip,
 					'pic_name' => $row->pic_name,
@@ -112,7 +115,9 @@ class Contract extends Admin_Controller
         $row = $this->Contract_model->get_by_id($id);
 
         if ($row) {
+            $this->Contract_model->set_primary_key('contract_id');
             $this->Contract_model->delete($id);
+            $this->Contract_model->set_primary_key('id');
             $this->session->set_flashdata('message', 'Delete Record Success');
             redirect(site_url('admin/contract'));
         } else {
@@ -125,6 +130,10 @@ class Contract extends Admin_Controller
     {
         $form = $this->form_builder->create_form();
 
+        $this->add_script($this->datepicker_script,FALSE,'foot');
+        $this->add_script($this->phoneformat_script,FALSE,'foot');
+        $this->add_stylesheet($this->stylesheet,FALSE,'screen');
+
         $userid = $this->ion_auth->get_user_id();
         $username = $this->ion_auth->get_user_name();
         $contractid = $this->ion_auth->get_contract_id();
@@ -132,6 +141,7 @@ class Contract extends Admin_Controller
         if ($form->validate())
         {
 			$company_name = $this->input->post('company_name');
+			$company_status = $this->input->post('company_status');
 			$db_name = $this->input->post('db_name');
 			$server_ip = $this->input->post('server_ip');
 			$pic_name = $this->input->post('pic_name');
@@ -149,6 +159,7 @@ class Contract extends Admin_Controller
         	insert(array
                 (
 					'company_name' => $company_name,
+					'company_status' => $company_status,
 					'db_name' => $db_name,
 					'server_ip' => $server_ip,
 					'pic_name' => $pic_name,
@@ -193,6 +204,10 @@ class Contract extends Admin_Controller
     {
         $form = $this->form_builder->create_form();
 
+        $this->add_script($this->datepicker_script,FALSE,'foot');
+        $this->add_script($this->phoneformat_script,FALSE,'foot');
+        $this->add_stylesheet($this->stylesheet,FALSE,'screen');
+
         $userid = $this->ion_auth->get_user_id();
         $username = $this->ion_auth->get_user_name();
         $contractid = $this->ion_auth->get_contract_id();
@@ -200,6 +215,7 @@ class Contract extends Admin_Controller
         if ($form->validate())
         {
 			$company_name = $this->input->post('company_name');
+			$company_status = $this->input->post('company_status');
 			$db_name = $this->input->post('db_name');
 			$server_ip = $this->input->post('server_ip');
 			$pic_name = $this->input->post('pic_name');
@@ -220,6 +236,7 @@ class Contract extends Admin_Controller
                 array
                 (
 					'company_name' => $company_name,
+					'company_status' => $company_status,
 					'db_name' => $db_name,
 					'server_ip' => $server_ip,
 					'pic_name' => $pic_name,
@@ -260,6 +277,7 @@ class Contract extends Admin_Controller
 
         $data = array (
 					'company_name' => $row->company_name,
+					'company_status' => $row->company_status,
 					'db_name' => $row->db_name,
 					'server_ip' => $row->server_ip,
 					'pic_name' => $row->pic_name,
@@ -294,6 +312,11 @@ Please copy this section into ../application/modules/admin/config/form_validatio
             	'field'		 => 'company_name',
             	'label'		 => 'Nama Grosir',
             	'rules'		 => 'trim|required',
+        	),
+        	array(
+            	'field'		 => 'company_status',
+            	'label'		 => 'Status Grosir',
+            	'rules'		 => 'trim|required|numeric',
         	),
         	array(
             	'field'		 => 'db_name',
@@ -365,6 +388,11 @@ Please copy this section into ../application/modules/admin/config/form_validatio
             	'rules'		 => 'trim|required',
         	),
         	array(
+            	'field'		 => 'company_status',
+            	'label'		 => 'Status Grosir',
+            	'rules'		 => 'trim|required|numeric',
+        	),
+        	array(
             	'field'		 => 'db_name',
             	'label'		 => 'Nama Database',
             	'rules'		 => 'trim|required',
@@ -432,4 +460,4 @@ Please copy this section into ../application/modules/admin/config/form_validatio
 /* End of file Contract.php */
 /* Location: ./application/controllers/Contract.php */
 /* Please DO NOT modify this information : */
-/* Generated by Harviacode Custom Codeigniter CRUD Generator 2018-07-25 07:53:26 */
+/* Generated by Harviacode Custom Codeigniter CRUD Generator 2018-07-27 09:24:25 */

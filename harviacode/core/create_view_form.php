@@ -16,7 +16,7 @@ foreach ($non_pk as $row) {
         $string .= "\n\t\t\t\t<?php echo \$form->bs3_date('".ucfirst(label(empty($row['column_comment'])? $row['column_name']:$row['column_comment']))."','".$row['column_name']."','','','','Masukkan ".ucfirst(label(empty($row['column_comment'])? $row['column_name']:$row['column_comment']))."'); ?>";
     } elseif (strpos($row['column_name'],'phone') || strpos($row['column_name'],'phone') !== false) {
         $string .= "\n\t\t\t\t<?php echo \$form->bs3_phone('".ucfirst(label(empty($row['column_comment'])? $row['column_name']:$row['column_comment']))."','".$row['column_name']."','','','','Masukkan ".ucfirst(label(empty($row['column_comment'])? $row['column_name']:$row['column_comment']))."'); ?>";
-    } elseif (strpos($row['column_name'],'status') || strpos($row['column_name'],'status') !== false) {
+    } elseif (strpos($row['column_name'],'status_data') || strpos($row['column_name'],'status_data') !== false || $row['column_key'] === 'MUL') {
         $string .= "\n\t\t\t\t<?php echo \$form->bs3_dropdown('".ucfirst(label(empty($row['column_comment'])? $row['column_name']:$row['column_comment']))."','".$row['column_name']."','','','','Pilih ".ucfirst(label(empty($row['column_comment'])? $row['column_name']:$row['column_comment']))."'); ?>";
     } else {
         $string .= "\n\t\t\t\t<?php echo \$form->bs3_text('".ucfirst(label(empty($row['column_comment'])? $row['column_name']:$row['column_comment']))."','".$row['column_name']."','','','','Masukkan ".ucfirst(label(empty($row['column_comment'])? $row['column_name']:$row['column_comment']))."'); ?>";
