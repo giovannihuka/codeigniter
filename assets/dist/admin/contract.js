@@ -36,6 +36,11 @@ $(document).ready(function() {
                             "data": "contract_id",
                             "orderable": false
                         },
+                        {
+                            "data" : "action",
+                            "orderable": false,
+                            "className" : "text-center"
+                        },
 						{"data": "company_name"},
 						{"data": "company_status"},
 						{"data": "db_name"},
@@ -50,11 +55,6 @@ $(document).ready(function() {
 						{"data": "start_date"},
 						{"data": "terminate_date"},
 						{"data": "status_data"},
-                        {
-                            "data" : "action",
-                            "orderable": false,
-                            "className" : "text-center"
-                        }
                     ],
                     order: [[0, 'desc']],
                     rowCallback: function(row, data, iDisplayIndex) {

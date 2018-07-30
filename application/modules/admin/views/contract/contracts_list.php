@@ -19,6 +19,7 @@
             <thead>
                 <tr>
                     <th width="45px">No</th>
+            <th width="80px">Aksi</th>
 		    <th>Nama Grosir</th>
 		    <th>Status Grosir</th>
 		    <th>Nama Database</th>
@@ -33,7 +34,7 @@
 		    <th>Tanggal Awal</th>
 		    <th>Tanggal Berhenti Kontrak</th>
 		    <th>Status Data</th>
-		    <th width="80px">Aksi</th>
+		    
                 </tr>
             </thead>
                     </table>
