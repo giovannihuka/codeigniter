@@ -22,10 +22,15 @@ class Contract extends Admin_Controller
     private $stylesheet = array(
         // 'assets/datatables/DataTables-1.10.16/css/jquery.dataTables.min.css',
         'assets/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css',
+        'assets/jquery-ui-1.12.1.custom/jquery-ui.css',
+
     );
 
     private $datepicker_script = array(
-        'assets/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
+        // 'assets/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
+        
+        // 'assets/jquery-ui-1.12.1.custom/external/jquery/jquery.js',
+        'assets/jquery-ui-1.12.1.custom/jquery-ui.js',
         'assets/dist/admin/date_picker.js',
     );
 
@@ -201,7 +206,7 @@ class Contract extends Admin_Controller
     }
     public function create()
     {
-        $form = $this->form_builder->create_form();
+        $form = $this->form_builder->create_form('',false,array('autocomplete'=>'off'));
 
         $this->add_script($this->datepicker_script,FALSE,'foot');
         $this->add_script($this->phoneformat_script,FALSE,'foot');

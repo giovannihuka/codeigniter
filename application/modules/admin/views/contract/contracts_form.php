@@ -16,7 +16,7 @@
 				<?php echo $form->bs3_phone('Telepon Lain','company_phone2','','','','Masukkan Telepon Lain'); ?>
 				<?php echo $form->bs3_phone('Hand Phone','pic_phone','','','','Masukkan Hand Phone'); ?>
 				<?php echo $form->bs3_text('Email','email_address','','','','Masukkan Email'); ?>
-				<?php echo $form->bs3_date('Tanggal Persetujuan Kontrak','contract_date','','','','Masukkan Tanggal Persetujuan Kontrak'); ?>
+				<?php echo $form->bs3_date('Tanggal Persetujuan Kontrak','contract_date','','','','Tanggal Kontrak'); ?>
 				<?php echo $form->bs3_date('Tanggal Awal','start_date','','','','Masukkan Tanggal Awal'); ?>
 				<?php echo $form->bs3_date('Tanggal Berhenti Kontrak','terminate_date','','','','Masukkan Tanggal Berhenti Kontrak'); ?>
 				<?php echo $form->bs3_dropdown('Status Data','status_data',$status_list,'','','Pilih Status Data'); ?>

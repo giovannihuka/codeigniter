@@ -2,9 +2,11 @@ $(function() {
     //Date picker
     $('.datepicker').datepicker({
       	autoclose: true,
-    	format: 'yyyy-mm-dd',
+    	dateFormat: 'yy-mm-dd',
         orientation: 'auto',
         todayBtn: true,
     	todayHighlight: true,
+    	changeMonth: true,
+    	changeYear: true,
     });
 });

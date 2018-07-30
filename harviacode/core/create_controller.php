@@ -67,7 +67,7 @@ $string .="\n\n    private \$stylesheet = array(
     );";
 
 $string .= "\n\n    private \$datepicker_script = array(
-        'assets/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
+        'assets/jquery-ui-1.12.1.custom/jquery-ui.js',
         'assets/dist/admin/date_picker.js',
     );";
 
@@ -291,7 +291,7 @@ if ($export_pdf == '1') {
 $string_create = "
     public function create()
     {
-        \$form = \$this->form_builder->create_form();
+        \$form = \$this->form_builder->create_form('',false,array('autocomplete'=>'off'));
 
         \$this->add_script(\$this->datepicker_script,FALSE,'foot');
         \$this->add_script(\$this->phoneformat_script,FALSE,'foot');
@@ -358,7 +358,7 @@ $string_update = "\n";
 $string_update .= "
     public function update(\$id)
     {
-        \$form = \$this->form_builder->create_form();
+        \$form = \$this->form_builder->create_form('',false,array('autocomplete'=>'off'));
 
         \$this->add_script(\$this->datepicker_script,FALSE,'foot');
         \$this->add_script(\$this->phoneformat_script,FALSE,'foot');
