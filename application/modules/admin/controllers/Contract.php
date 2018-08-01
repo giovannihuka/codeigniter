@@ -204,6 +204,7 @@ class Contract extends Admin_Controller
         xlsEOF();
         exit();
     }
+    
     public function create()
     {
         $form = $this->form_builder->create_form('',false,array('autocomplete'=>'off'));

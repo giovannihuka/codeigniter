@@ -244,7 +244,7 @@ $string .= "\n\n\tforeach (\$this->" . $m . "->get_all() as \$data) {
             xlsWriteNumber(\$tablebody, \$kolombody++, \$nourut);";
 foreach ($non_pk as $row) {
         $column_name = $row['column_name'];
-        $xlsWrite = $row['data_type'] == 'int' || $row['data_type'] == 'double' || $row['data_type'] == 'decimal' ? 'xlsWriteNumber' : 'xlsWriteLabel';
+        $xlsWrite = $row['data_type'] == 'int' || $row['data_type'] == 'double' || $row['data_type'] == 'decimal' || $row['column_name'] == 'create_time' || $row['column_name'] == 'update_time' ? 'xlsWriteNumber' : 'xlsWriteLabel';
         $string .= "\n\t    " . $xlsWrite . "(\$tablebody, \$kolombody++, \$data->$column_name);";
 }
 $string .= "\n\n\t    \$tablebody++;

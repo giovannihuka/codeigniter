@@ -20,10 +20,21 @@
 				<?php echo $form->bs3_date('Tanggal Awal','start_date','','','','Masukkan Tanggal Awal'); ?>
 				<?php echo $form->bs3_date('Tanggal Berhenti Kontrak','terminate_date','','','','Masukkan Tanggal Berhenti Kontrak'); ?>
 				<?php echo $form->bs3_dropdown('Status Data','status_data',$status_list,'','','Pilih Status Data'); ?>
+				<div class="form-group">
+					<label>Checkbox</label>
+					<div class="form-control">
+					<div class="Checkbox">
+						<?php echo form_checkbox('val_1','1', TRUE); ?>
+						<?php echo form_checkbox('val_2','2', TRUE); ?>
+						<?php echo form_checkbox('val_3','3', TRUE); ?>
+					</div>
+				</div>
+				</div>
 				<?php echo $form->bs3_text_hidden('Create Userid','create_userid'); ?>
 				<?php echo $form->bs3_text_hidden('Update Userid','update_userid'); ?>
 				<?php echo $form->bs3_text_hidden('Create Time','create_time'); ?>
 				<?php echo $form->bs3_text_hidden('Update Time','update_time'); ?>
+
 				<?php echo $form->bs3_submit('Create'); ?>
             	<?php echo '<button type="reset" class="btn btn-default" onclick="location.href=\'contract\'">Cancel</button>' ?>
             	<?php echo $form->close(); ?>

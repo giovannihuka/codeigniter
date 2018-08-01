@@ -22,3 +22,5 @@ application/config/database.php
 application/config/database.php
 application/modules/admin/config/pagination.php
 harviacode/output/
+
+.htaccess
