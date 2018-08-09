@@ -143,11 +143,11 @@ class Form {
 	}
 
 	// Textarea field
-	public function field_textarea($name, $value = NULL, $extra = array())
+	public function field_textarea($name, $value = NULL, $readonly = '', $extra = array())
 	{
 		$data = array('id' => $name, 'name' => $name);
 		$value = ($value===NULL) ? $this->get_field_value($name) : $value;
-		return form_textarea($data, $value, $extra);
+		return form_textarea($data, $value, $readonly, $extra);
 	}
 	
 	// Upload field
@@ -215,6 +215,12 @@ class Form {
 		return '<div class="form-group">'.form_label($label, $name).$this->field_text($name, $value, $extra, $readonly, $title).'</div>';
 	}
 
+	public function bs3_smartphone($label, $name, $value = NULL, $readonly = '', $extra = array(), $title = '')
+	{
+		$extra['class'] = 'form-control hpformat';
+		return '<div class="form-group">'.form_label($label, $name).$this->field_text($name, $value, $extra, $readonly, $title).'</div>';
+	}
+
 	public function bs3_text_hidden($label, $name, $value = NULL, $extra = array(), $title = '')
 	{
 		$extra['class'] = 'form-control';
@@ -251,10 +257,10 @@ class Form {
 		return '<div class="form-group">'.form_label($label, $name).$this->field_password($name, $value, $extra).'</div>';
 	}
 
-	public function bs3_textarea($label, $name, $value = NULL, $extra = array())
+	public function bs3_textarea($label, $name, $value = NULL, $readonly = '', $extra = array())
 	{
 		$extra['class'] = 'form-control';
-		return '<div class="form-group">'.form_label($label, $name).$this->field_textarea($name, $value, $extra).'</div>';
+		return '<div class="form-group">'.form_label($label, $name).$this->field_textarea($name, $value, $readonly, $extra).'</div>';
 	}
 
 	public function bs3_submit($label = 'Submit', $class = 'btn btn-primary', $extra = array())
