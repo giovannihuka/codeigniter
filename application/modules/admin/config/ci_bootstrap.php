@@ -128,9 +128,9 @@ $config['ci_bootstrap'] = array(
 	// AdminLTE settings
 	'adminlte' => array(
 		'body_class' => array(
-			'webmaster'	=> 'skin-black',
+			'webmaster'	=> 'skin-red',
 			'admin'		=> 'skin-purple',
-			'manager'	=> 'skin-red',
+			'manager'	=> 'skin-yellow',
 			'staff'		=> 'skin-blue',
 		)
 	),

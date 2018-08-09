@@ -1,5 +1,5 @@
 <header class="main-header">
-	<a href="" class="logo"><b><?php echo $site_name; ?></b></a>
+	<a href="" class="logo visible-lg"><b><?php echo $site_name; ?></b></a>
 	<nav class="navbar navbar-static-top" role="navigation">
 		<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
 			<span class="sr-only">Toggle navigation</span>
@@ -7,7 +7,7 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</a>
-		<div class="navbar-custom-menu">
+		<div class="navbar-custom-menu hidden-sm hidden-xs">
 			<ul class="nav navbar-nav">
 				<li class="dropdown user user-menu">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">

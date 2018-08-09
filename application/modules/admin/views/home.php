@@ -1,6 +1,6 @@
 <div class="row">
 
-	<div class="col-md-4">
+	<div class="col-md-4 visible-sm visible-xs">
 		<?php echo modules::run('adminlte/widget/box_open', 'Shortcuts'); ?>
 			<?php echo modules::run('adminlte/widget/app_btn', 'fa fa-user', 'Account', 'panel/account'); ?>
 			<?php echo modules::run('adminlte/widget/app_btn', 'fa fa-sign-out', 'Logout', 'panel/logout'); ?>
