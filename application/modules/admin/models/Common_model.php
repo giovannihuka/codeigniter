@@ -182,6 +182,21 @@ class Common_model extends MY_Model
     }  
 
     /*
+     *  Option list Attendance
+     *  untuk absensi
+     */
+    function attendance_option()
+    {
+        $this->db->from('ref_presences');
+        $this->db->order_by('id','asc');
+        $result = $this->db->get()->result();;
+
+        $return = array('');
+
+        return $result;    
+    }
+
+    /*
      * Function untuk merubah tampilan angka dalam satuan Rp.
     */
 

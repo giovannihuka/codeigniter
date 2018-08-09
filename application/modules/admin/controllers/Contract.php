@@ -273,6 +273,7 @@ class Contract extends Admin_Controller
 
         $this->mViewData['contract'] = $this->Contract_model->get_all();
         $this->mViewData['contract_status'] = $this->common_ref->contract_status();
+        $this->mViewData['att_opt'] = $this->common_ref->attendance_option();
         $this->mViewData['status_list'] = $this->common_ref->status_list();
         $this->mPageTitle = 'Registrasi Profil Grosir';
         $this->mViewData['form'] = $form;

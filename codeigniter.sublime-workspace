@@ -1,0 +1,1223 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"a",
+				"attendance_option"
+			],
+			[
+				"form",
+				"form-group"
+			],
+			[
+				"sto",
+				"sto_product"
+			],
+			[
+				"barc",
+				"barcode_gen"
+			],
+			[
+				"btn",
+				"btn-primary"
+			],
+			[
+				"te",
+				"text-right"
+			],
+			[
+				"sto_",
+				"sto_product"
+			],
+			[
+				"for",
+				"odbc_foreignkeys"
+			],
+			[
+				"sto_p",
+				"sto_productid"
+			],
+			[
+				"glo_sub",
+				"glo_subprodcategoryid"
+			],
+			[
+				"Doub",
+				"Double_product_model"
+			],
+			[
+				"datab",
+				"datatables"
+			],
+			[
+				"sto_c",
+				"sto_contractid"
+			],
+			[
+				"sto_con",
+				"sto_contract"
+			],
+			[
+				"sql_",
+				"sql_query"
+			],
+			[
+				"glo",
+				"glo_product"
+			],
+			[
+				"new",
+				"new-product"
+			],
+			[
+				"va",
+				"val_id"
+			],
+			[
+				"st",
+				"sto_product"
+			],
+			[
+				"sto_pro",
+				"sto_productid"
+			],
+			[
+				"create",
+				"createid"
+			],
+			[
+				"data",
+				"dataTable"
+			],
+			[
+				"prod",
+				"prod_name"
+			],
+			[
+				"pro",
+				"prod_name"
+			],
+			[
+				"Sto_pr",
+				"Sto_product_model"
+			],
+			[
+				"contain",
+				"container_name"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"ima",
+				"image_section"
+			],
+			[
+				"col",
+				"col-md-12"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"img",
+				"img-responsive"
+			],
+			[
+				"font-he",
+				"font-weight"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"image",
+				"image_section"
+			],
+			[
+				"op",
+				"oprmanager"
+			],
+			[
+				"stat",
+				"status_produk"
+			],
+			[
+				"product",
+				"product_status"
+			],
+			[
+				"produ",
+				"product_status"
+			],
+			[
+				"cont",
+				"contentElement"
+			],
+			[
+				"ba",
+				"barcode"
+			],
+			[
+				"u",
+				"uofm_name"
+			],
+			[
+				"level",
+				"level_3"
+			],
+			[
+				"fu",
+				"fullname_product"
+			],
+			[
+				"glo_",
+				"glo_prodcategoryid"
+			],
+			[
+				"read",
+				"read_data"
+			],
+			[
+				"scri",
+				"script_js"
+			],
+			[
+				"string",
+				"string_js"
+			],
+			[
+				"leve",
+				"level_3"
+			],
+			[
+				"le",
+				"level_2"
+			],
+			[
+				"ref_pac",
+				"ref_packagingid"
+			],
+			[
+				"ref",
+				"ref_containerid"
+			],
+			[
+				"glo_subp",
+				"glo_subprodcategory_list"
+			],
+			[
+				"comm",
+				"common_ref"
+			],
+			[
+				"order",
+				"order_by"
+			],
+			[
+				"resu",
+				"result_array"
+			],
+			[
+				"TAB",
+				"table_name"
+			],
+			[
+				"TABL",
+				"TABLE_NAME"
+			],
+			[
+				"res",
+				"result_array"
+			],
+			[
+				"sql",
+				"sql_text"
+			],
+			[
+				"TABLE",
+				"TABLE_SCHEMA"
+			],
+			[
+				"tables",
+				"tables_data"
+			],
+			[
+				"resul",
+				"result_array"
+			],
+			[
+				"UP",
+				"UPDATE_TIME"
+			],
+			[
+				"CRE",
+				"CREATE_TIME"
+			],
+			[
+				"UPDATE_",
+				"UPDATE_USERID"
+			],
+			[
+				"C",
+				"CREATE_USERID"
+			],
+			[
+				"S",
+				"SELECTED"
+			],
+			[
+				"tab",
+				"TABLE_COMMENT"
+			],
+			[
+				"table",
+				"TABLE_NAME"
+			],
+			[
+				"contra",
+				"contract_id"
+			],
+			[
+				"ref_princ",
+				"ref_principalid"
+			],
+			[
+				"vali",
+				"validate"
+			],
+			[
+				"colo",
+				"color"
+			],
+			[
+				"email",
+				"email_address"
+			],
+			[
+				"dev",
+				"device_num"
+			],
+			[
+				"gsm_n",
+				"gsm_number"
+			],
+			[
+				"gsm_",
+				"gsm_number"
+			],
+			[
+				"have",
+				"have_gsm"
+			],
+			[
+				"req",
+				"required_fields"
+			],
+			[
+				"add",
+				"add_fields"
+			],
+			[
+				"asse",
+				"asset"
+			],
+			[
+				"gsm",
+				"gsm_number"
+			],
+			[
+				"edit",
+				"edit_fields"
+			],
+			[
+				"edi",
+				"edit_fields"
+			],
+			[
+				"ass",
+				"asset"
+			],
+			[
+				"render",
+				"render_crud"
+			],
+			[
+				"unse",
+				"unset_delete"
+			],
+			[
+				"devic",
+				"device_sn"
+			],
+			[
+				"database",
+				"database_id"
+			],
+			[
+				"full",
+				"full_name"
+			],
+			[
+				"sub",
+				"subject"
+			],
+			[
+				"subj",
+				"subject"
+			],
+			[
+				"ema",
+				"email_result"
+			],
+			[
+				"emai",
+				"email_add"
+			],
+			[
+				"pri",
+				"primary_key"
+			],
+			[
+				"subje",
+				"subject_id"
+			],
+			[
+				"su",
+				"subjects"
+			],
+			[
+				"pr",
+				"primary_key"
+			],
+			[
+				"subjec",
+				"subject_name"
+			],
+			[
+				"send",
+				"sendto"
+			],
+			[
+				"scr",
+				"script"
+			],
+			[
+				"Code",
+				"Codeigniter"
+			],
+			[
+				"admin",
+				"admin_users"
+			],
+			[
+				"arra",
+				"array\t$… = array (…)"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"proje",
+				"project_id"
+			],
+			[
+				"subject",
+				"subject_id"
+			],
+			[
+				"cli",
+				"clientname"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"client",
+				"client_list"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"dt_",
+				"dt_stylesheet"
+			],
+			[
+				"cateogy",
+				"categorymodel"
+			],
+			[
+				"cal",
+				"calEvent"
+			],
+			[
+				"work",
+				"work_date"
+			],
+			[
+				"eve",
+				"event"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"bo",
+				"backgroundColor"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"json_",
+				"json_encode"
+			],
+			[
+				"all",
+				"allDay"
+			],
+			[
+				"even",
+				"eventSources"
+			],
+			[
+				"ret",
+				"return_events"
+			],
+			[
+				"tim",
+				"timesheet_calendar"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"jso",
+				"json_result"
+			],
+			[
+				"event",
+				"events"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "application/modules/admin/views/contract/contracts_form.php",
+			"settings":
+			{
+				"buffer_size": 2988,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/modules/admin/controllers/Contract.php",
+			"settings":
+			{
+				"buffer_size": 19127,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/config/ci_bootstrap_example.php",
+			"settings":
+			{
+				"buffer_size": 6447,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/modules/admin/models/Common_model.php",
+			"settings":
+			{
+				"buffer_size": 5134,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "system/helpers/form_helper.php",
+			"settings":
+			{
+				"buffer_size": 25592,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Create Package File"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
+				"install\t",
+				"Package Control: Install Package"
+			],
+			[
+				"\t",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 524.0
+	},
+	"console":
+	{
+		"height": 347.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/codeigniter",
+		"/C/xampp/htdocs/codeigniter/application",
+		"/C/xampp/htdocs/codeigniter/application/config",
+		"/C/xampp/htdocs/codeigniter/application/controllers",
+		"/C/xampp/htdocs/codeigniter/application/modules",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/config",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/models",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/views",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/contract",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/panel"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/codeigniter/application/helpers/MY_url_helper.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Sto_product.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/product/products_form.php",
+		"/C/xampp/htdocs/fmcg/assets/dist/admin/product_form.js",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/sto_product/sto_products_form.php",
+		"/C/xampp/htdocs/fmcg/assets/dist/admin/sto_product_form.js",
+		"/C/xampp/htdocs/fmcg/application/libraries/Form_builder.php",
+		"/C/xampp/htdocs/fmcg/system/helpers/form_helper.php",
+		"/C/xampp/htdocs/fmcg/application/config/production/database.php",
+		"/C/xampp/htdocs/fmcg/application/config/database.php",
+		"/C/xampp/htdocs/fmcg/system/core/CodeIgniter.php",
+		"/C/xampp/htdocs/fmcg/.htaccess",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/models/Sto_product_model.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/double_product/double_product_update.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Double_product.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/sto_product/sto_products_update.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/models/Double_product_model.php",
+		"/C/xampp/htdocs/fmcg/application/third_party/MX/Controller.php",
+		"/C/xampp/htdocs/fmcg/assets/dist/admin/double_product.js",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/config/ci_bootstrap.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/double_product/double_product_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/libraries/Datatables.php",
+		"/C/xampp/htdocs/fmcg/assets/datatables/dataTables.bootstrap.js",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/models/Dashboard_model.php",
+		"/C/xampp/htdocs/fmcg/assets/dist/admin/sto_product.js",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/double_product/products_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/product/products_list.php",
+		"/C/xampp/htdocs/fmcg/harviacode/core/create_controller.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Product.php",
+		"/C/xampp/htdocs/fmcg/harviacode/core/create_libraries_datatables.php",
+		"/C/xampp/htdocs/fmcg/application/logs/log-2018-07-31.php",
+		"/C/xampp/htdocs/fmcg/system/database/DB_query_builder.php",
+		"/C/xampp/htdocs/fmcg/system/core/Model.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/config/form_validation.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/ref_principal/ref_principals_update.php",
+		"/C/xampp/htdocs/fmcg/harviacode/core/setting.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Ref_principal.php",
+		"/C/xampp/htdocs/fmcg/assets/dist/admin/sto_product_update.js",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/product/products_update.php",
+		"/C/xampp/htdocs/fmcg/application/helpers/MY_url_helper.php",
+		"/C/xampp/htdocs/fmcg/assets/dist/admin/product.js",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/_layouts/default.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/sto_product/sto_products_list.php",
+		"/C/xampp/htdocs/fmcg/application/core/Base_Model.php",
+		"/C/xampp/htdocs/fmcg/fmcg.sublime-project",
+		"/C/xampp/htdocs/wordpress/wp-includes/pluggable.php",
+		"/C/xampp/htdocs/wordpress/wp-includes/user.php",
+		"/C/xampp/htdocs/wordpress/wp-config.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/models/Common_model.php",
+		"/C/xampp/htdocs/fmcg/harviacode/core/create_view_list_datatables.php",
+		"/C/xampp/htdocs/fmcg/application/logs/log-2018-07-18.php",
+		"/C/xampp/htdocs/fmcg/application/logs/log-2018-07-17.php",
+		"/C/xampp/htdocs/fmcg/harviacode/output/models/Sto_product_model.php",
+		"/C/xampp/htdocs/fmcg/system/database/DB_driver.php",
+		"/C/xampp/htdocs/fmcg/system/database/drivers/pdo/subdrivers/pdo_mysql_driver.php",
+		"/C/xampp/htdocs/fmcg/system/helpers/inflector_helper.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/models/Product_model.php",
+		"/C/xampp/htdocs/fmcg/system/core/Common.php",
+		"/C/xampp/htdocs/fmcg/system/libraries/Email.php",
+		"/C/xampp/htdocs/giovannihuka.com/giovanni.sublime-project",
+		"/C/xampp/htdocs/fmcg/harviacode/core/test.php",
+		"/C/xampp/htdocs/fmcg/application/logs/log-2018-07-06.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/product/products_read.php",
+		"/C/xampp/htdocs/fmcg/assets/dist/admin/product.css",
+		"/C/xampp/htdocs/fmcg/assets/dist/admin/jquery.doubleScroll.js",
+		"/C/xampp/htdocs/fmcg/application/config/form_validation.php",
+		"/C/xampp/htdocs/fmcg/assets/dist/admin/prod_categorization.js",
+		"/C/xampp/htdocs/fmcg/harviacode/output/controllers/Product.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/ref_container/ref_containers_form.php",
+		"/C/xampp/htdocs/fmcg/application/logs/log-2018-07-04.php",
+		"/C/xampp/htdocs/fmcg/harviacode/core/connection.php",
+		"/C/xampp/htdocs/fmcg/application/logs/log-2018-07-03.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Ref_container.php",
+		"/C/xampp/htdocs/fmcg/harviacode/core/create_view_form.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_prod_copy/glo_prod_copy_update.php",
+		"/C/xampp/htdocs/fmcg/application/core/MY_Controller.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Glo_prod_copy.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/models/Glo_prod_copy_model.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_prod_copie/glo_prod_copies_form.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_prod_copy/glo_prod_copy_read.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Code_generator.php",
+		"/C/xampp/htdocs/fmcg/assets/dist/admin/glo_prod_copy.js",
+		"/C/xampp/htdocs/fmcg/application/logs/log-2018-06-29.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/models/Ref_principal_model.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_prod_copy/glo_prod_copy_form.php",
+		"/C/xampp/htdocs/fmcg/system/language/english/form_validation_lang.php",
+		"/C/xampp/htdocs/fmcg/application/config/config.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store/stores_form.php",
+		"/C/xampp/htdocs/fmcg/assets/dist/admin/code_generator.js",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/models/Generator_model.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/generator/table_list.php",
+		"/C/xampp/htdocs/fmcg/harviacode/core/harviacode.php",
+		"/C/xampp/htdocs/fmcg/application/vendor/league/csv/src/Config/Output.php",
+		"/C/xampp/htdocs/fmcg/system/libraries/Javascript.php",
+		"/C/xampp/htdocs/fmcg/application/logs/log-2018-06-28.php",
+		"/C/xampp/htdocs/fmcg/application/models/Dev_table_model.php",
+		"/C/xampp/htdocs/fmcg/assets/js/jquery-3.3.1.js",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_prod_copy/glo_prod_copy_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/contract/contracts_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/distributor/distributors_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_prodcategorie/glo_prodcategories_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_product/glo_products_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_subprodcategories/glo_subprodcategoriess_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_subprodcategory/glo_subprodcategorys_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/global_product/glo_prod_copy_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/product/store_product_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/ref_district/ref_districts_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/ref_principal/ref_principals_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store/stores_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store_categorie/store_categories_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store_category/store_categorys_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store_price/store_prices_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store_pricecategorie/store_pricecategories_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store_product/store_products_list.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/ref_pricecategorie/ref_pricecategories_list.php",
+		"/C/xampp/htdocs/fmcg/assets/dist/admin/glo_product.js",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_product/glo_products_update.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Glo_prodcategorie.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Contract.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Distributor.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Glo_product.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Glo_subprodcategories.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Ref_district.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Ref_pricecategorie.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Store.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Store_categorie.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Store_price.php",
+		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Store_pricecategorie.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 105.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"radio",
+			"form_open_multipart",
+			"upload"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "application/modules/admin/views/contract/contracts_form.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2988,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2251,
+								2251
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 182.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/modules/admin/controllers/Contract.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9622,
+								9622
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3645.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/config/ci_bootstrap_example.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 6447,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/modules/admin/models/Common_model.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4854,
+								4854
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2527.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "system/helpers/form_helper.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25592,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13446,
+								13446
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 7973.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 271.0
+	},
+	"pinned_build_system": "",
+	"project": "codeigniter.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"form_hel",
+				"system\\helpers\\form_helper.php"
+			],
+			[
+				"doublec",
+				"assets\\dist\\admin\\double_product.js"
+			],
+			[
+				"jquery.do",
+				"assets\\dist\\admin\\jquery.doubleScroll.js"
+			],
+			[
+				"jquery.dou",
+				"assets\\dist\\admin\\jquery.doubleScroll.js"
+			],
+			[
+				"form_valida",
+				"application\\modules\\admin\\config\\form_validation.php"
+			],
+			[
+				"form",
+				"application\\config\\form_validation.php"
+			],
+			[
+				"common_",
+				"application\\modules\\admin\\models\\Common_model.php"
+			],
+			[
+				"form_val",
+				"application\\modules\\admin\\config\\form_validation.php"
+			],
+			[
+				"form_vali",
+				"application\\modules\\admin\\config\\form_validation.php"
+			],
+			[
+				"form_",
+				"application\\modules\\admin\\config\\form_validation.php"
+			],
+			[
+				"form_validation_lang",
+				"system\\language\\english\\form_validation_lang.php"
+			],
+			[
+				"form_validation.ph",
+				"application\\modules\\admin\\config\\form_validation.php"
+			],
+			[
+				"store_form",
+				"application\\modules\\admin\\views\\store\\stores_form.php"
+			],
+			[
+				"geo",
+				"assets\\dist\\admin\\geolocation_list.js"
+			],
+			[
+				"form_validation_lang.php",
+				"system\\language\\english\\form_validation_lang.php"
+			],
+			[
+				"timesh",
+				"application\\modules\\admin\\controllers\\Timesheet.php"
+			],
+			[
+				"load",
+				"system\\core\\Loader.php"
+			],
+			[
+				"loader",
+				"application\\third_party\\MX\\Loader.php"
+			],
+			[
+				"ion_auth_mo",
+				"application\\third_party\\ion_auth\\models\\Ion_auth_model.php"
+			],
+			[
+				"timeshe",
+				"application\\modules\\admin\\controllers\\Timesheet.php"
+			],
+			[
+				"email.p",
+				"system\\libraries\\Email.php"
+			],
+			[
+				"logs",
+				"application\\logs\\log-2018-04-02.php"
+			],
+			[
+				"email",
+				"system\\libraries\\Email.php"
+			],
+			[
+				"groceru_crud",
+				"application\\third_party\\grocery_crud\\config\\grocery_crud.php"
+			],
+			[
+				"grocer",
+				"application\\third_party\\grocery_crud\\libraries\\Grocery_CRUD.php"
+			],
+			[
+				"form_help",
+				"system\\helpers\\form_helper.php"
+			],
+			[
+				"info",
+				"assets\\dist\\admin\\info-calendar.js"
+			],
+			[
+				"ci_bo",
+				"application\\modules\\admin\\config\\ci_bootstrap.php"
+			],
+			[
+				"info-",
+				"assets\\dist\\admin\\info-calendar.js"
+			],
+			[
+				"my_data",
+				"assets\\dist\\admin\\my_datatables.js"
+			],
+			[
+				"auth",
+				"application\\third_party\\ion_auth\\controllers\\Auth.php"
+			],
+			[
+				"validation",
+				"application\\config\\form_validation.php"
+			],
+			[
+				"helper",
+				"application\\helpers\\MY_directory_helper.php"
+			],
+			[
+				"jquery.dat",
+				"assets\\datatables\\DataTables-1.10.16\\css\\jquery.dataTables.css"
+			],
+			[
+				"list_tem",
+				"assets\\grocery_crud\\themes\\datatables\\views\\list_template.php"
+			],
+			[
+				"list_temp",
+				"assets\\grocery_crud\\themes\\datatables\\views\\list_template.php"
+			],
+			[
+				"datatables.css",
+				"assets\\grocery_crud\\themes\\datatables\\css\\datatables.css"
+			],
+			[
+				"list_t",
+				"assets\\grocery_crud\\themes\\datatables\\views\\list_template.php"
+			],
+			[
+				"system",
+				"application\\libraries\\System_message.php"
+			],
+			[
+				"login.",
+				"application\\views\\login.php"
+			],
+			[
+				"php_sto",
+				"php_stockdb.php"
+			],
+			[
+				"ewdbh",
+				"ewdbhelper12.php"
+			],
+			[
+				"ewcfg",
+				"ewcfg12.php"
+			],
+			[
+				"admin.ph",
+				"application\\core\\controllers\\Admin_Controller.php"
+			],
+			[
+				"calendar",
+				"system\\libraries\\Calendar.php"
+			],
+			[
+				"member.js",
+				"assets\\dist\\frontend\\member.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 324.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

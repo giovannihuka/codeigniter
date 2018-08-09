@@ -20,16 +20,41 @@
 				<?php echo $form->bs3_date('Tanggal Awal','start_date','','','','Masukkan Tanggal Awal'); ?>
 				<?php echo $form->bs3_date('Tanggal Berhenti Kontrak','terminate_date','','','','Masukkan Tanggal Berhenti Kontrak'); ?>
 				<?php echo $form->bs3_dropdown('Status Data','status_data',$status_list,'','','Pilih Status Data'); ?>
+
+<!--			Sample of using Checkbox and Radio button
+
+				<?php if ( !empty($groups) ): ?>
 				<div class="form-group">
-					<label>Checkbox</label>
-					<div class="form-control">
-					<div class="Checkbox">
-						<?php echo form_checkbox('val_1','1', TRUE); ?>
-						<?php echo form_checkbox('val_2','2', TRUE); ?>
-						<?php echo form_checkbox('val_3','3', TRUE); ?>
+					<label for="groups">Groups</label>
+					<div>
+					<?php foreach ($groups as $group): ?>
+						<label class="checkbox-inline">
+							<input type="checkbox" name="groups[]" value="<?php echo $group->id; ?>"> <?php echo $group->name; ?>
+						</label>
+					<?php endforeach; ?>
 					</div>
 				</div>
-				</div>
+				<?php endif; ?>
+
+				<?php if (!empty($att_opt)): ?>
+					<div class="form-group">
+						<label for="att_opt">Kehadiran</label>
+						<div>
+							<?php foreach ($att_opt as $row): ?>
+								<label class="radio-inline">
+									<?php if ($row->id === '1') { ?>
+									<input type="radio" name="att_opt[]" value="<?php echo $row->id; ?>" checked> <?php echo $row->attendance_status; ?>
+									<?php } else { ?>
+									<input type="radio" name="att_opt[]" value="<?php echo $row->id; ?>"> <?php echo $row->attendance_status; ?>
+									<?php } ?> 
+								</label>
+							<?php endforeach; ?>
+						</div>
+					</div>
+				<?php endif; ?>
+
+-->
+
 				<?php echo $form->bs3_text_hidden('Create Userid','create_userid'); ?>
 				<?php echo $form->bs3_text_hidden('Update Userid','update_userid'); ?>
 				<?php echo $form->bs3_text_hidden('Create Time','create_time'); ?>
