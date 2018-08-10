@@ -214,7 +214,7 @@ if ($export_excel == '1') {
     $string .= "\n\n    public function excel()
     {
         \$this->load->helper('exportexcel');
-        \$namaFile = \"$table_name.xls\";
+        \$namaFile = \"$table_name.xlsx\";
         \$judul = \"$table_name\";
         \$tablehead = 0;
         \$tablebody = 1;
