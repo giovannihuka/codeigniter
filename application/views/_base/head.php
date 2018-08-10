@@ -11,6 +11,8 @@
 
 	<title><?php echo $page_title; ?></title>
 
+	<!-- <link href="assets/css/my_style.css" rel="stylesheet" media="screen"> -->
+
 	<?php
 		foreach ($meta_data as $name => $content)
 		{

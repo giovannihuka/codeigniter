@@ -1,0 +1,46 @@
+/* Login Page */
+
+.login-page
+{
+    /*background: url('../../assets/dist/images/background_jakarta.jpg') no-repeat center center fixed, #abbbd6;*/
+    /* fallback for old browsers */
+    /*background: url('../../assets/dist/images/background_jakarta.jpg') no-repeat center center fixed, -webkit-linear-gradient(to left, #BC4328, #6785C1);*/
+    /* Chrome 10-25, Safari 5.1-6 */
+    /*background: url('../../assets/dist/images/background_jakarta.jpg') no-repeat center center fixed, linear-gradient(to left, #BC4328, #6785C1);*/
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to top, #063968, #8eb6ff) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.login-box-body
+{
+    border-radius: 10px;
+    border:1px solid black;
+}
+
+@media (max-width: 640px) {
+    .login-page {
+        background-image: none; 
+        background: #abbbd6;
+    }
+    .login-box-body
+    {
+        border-radius: 10px;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .login-page {
+        background-image: none;
+        background: #abbbd6;
+    }
+    .login-box-body
+    {
+        border-radius: 10px;
+        border: none;
+    }
+}
