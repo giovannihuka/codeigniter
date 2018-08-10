@@ -135,7 +135,7 @@ class Contract extends Admin_Controller
     public function excel()
     {
         $this->load->helper('exportexcel');
-        $namaFile = "contracts.xlsx";
+        $namaFile = "contracts.xls";
         $judul = "contracts";
         $tablehead = 0;
         $tablebody = 1;

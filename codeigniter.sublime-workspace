@@ -520,28 +520,19 @@
 	"buffers":
 	[
 		{
-			"file": "assets/css/my_style.css",
+			"file": "application/modules/admin/controllers/Contract.php",
 			"settings":
 			{
-				"buffer_size": 1305,
+				"buffer_size": 19199,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "application/modules/admin/config/ci_bootstrap.php",
+			"file": "harviacode/core/create_controller.php",
 			"settings":
 			{
-				"buffer_size": 4386,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/modules/admin/controllers/Login.php",
-			"settings":
-			{
-				"buffer_size": 1129,
+				"buffer_size": 15190,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -620,13 +611,16 @@
 		"/C/xampp/htdocs/codeigniter/assets",
 		"/C/xampp/htdocs/codeigniter/assets/css",
 		"/C/xampp/htdocs/codeigniter/assets/dist",
-		"/C/xampp/htdocs/codeigniter/assets/dist/images"
+		"/C/xampp/htdocs/codeigniter/assets/dist/images",
+		"/C/xampp/htdocs/codeigniter/harviacode",
+		"/C/xampp/htdocs/codeigniter/harviacode/core"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers/Login.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/config/ci_bootstrap.php",
-		"/C/xampp/htdocs/codeigniter/application/views/_base/head.php",
 		"/C/xampp/htdocs/codeigniter/assets/css/my_style.css",
+		"/C/xampp/htdocs/codeigniter/application/views/_base/head.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/contract/contracts_form.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers/Contract.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/models/Common_model.php",
@@ -750,12 +744,11 @@
 		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store_price/store_prices_list.php",
 		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store_pricecategorie/store_pricecategories_list.php",
 		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store_product/store_products_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/ref_pricecategorie/ref_pricecategories_list.php",
-		"/C/xampp/htdocs/fmcg/assets/dist/admin/glo_product.js"
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/ref_pricecategorie/ref_pricecategories_list.php"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -770,6 +763,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"xls",
 			"radio",
 			"form_open_multipart",
 			"upload"
@@ -790,96 +784,67 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "assets/css/my_style.css",
+					"file": "application/modules/admin/controllers/Contract.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1305,
+						"buffer_size": 19199,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								659,
-								659
+								4198,
+								4198
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1935.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "application/modules/admin/config/ci_bootstrap.php",
+					"file": "harviacode/core/create_controller.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4386,
+						"buffer_size": 15190,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1154,
-								1154
+								6893,
+								6893
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 270.0,
+						"translation.y": 3053.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "application/modules/admin/controllers/Login.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1129,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1086,
-								1086
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 45.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
