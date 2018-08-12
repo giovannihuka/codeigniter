@@ -36,6 +36,8 @@
 				</div>
 				<?php endif; ?>
 
+-->
+
 				<?php if (!empty($att_opt)): ?>
 					<div class="form-group">
 						<label for="att_opt">Kehadiran</label>
@@ -53,7 +55,7 @@
 					</div>
 				<?php endif; ?>
 
--->
+
 
 				<?php echo $form->bs3_text_hidden('Create Userid','create_userid'); ?>
 				<?php echo $form->bs3_text_hidden('Update Userid','update_userid'); ?>
