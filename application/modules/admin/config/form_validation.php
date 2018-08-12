@@ -160,6 +160,11 @@ $config = array(
             	'label'		 => 'Nama Grosir',
             	'rules'		 => 'trim|required',
         	),
+			array(
+            	'field'		 => 'company_status',
+            	'label'		 => 'Status Grosir',
+            	'rules'		 => 'trim|required|is_selected[Status]',
+        	),
         	array(
             	'field'		 => 'db_name',
             	'label'		 => 'Nama Database',
@@ -208,6 +213,11 @@ $config = array(
             	'field'		 => 'company_name',
             	'label'		 => 'Nama Grosir',
             	'rules'		 => 'trim|required',
+        	),
+			array(
+            	'field'		 => 'company_status',
+            	'label'		 => 'Status Grosir',
+            	'rules'		 => 'trim|required|is_selected[Status]',
         	),
         	array(
             	'field'		 => 'db_name',

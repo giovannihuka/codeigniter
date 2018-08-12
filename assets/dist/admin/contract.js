@@ -39,7 +39,8 @@ $(document).ready(function() {
                         {
                             "data" : "action",
                             "orderable": false,
-                            "className" : "text-center"
+                            "className" : "text-center",
+                            "class": "nowrap"
                         },
 						{"data": "company_name"},
 						{"data": "company_status"},

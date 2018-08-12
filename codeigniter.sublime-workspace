@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"sty",
+				"stylesheet"
+			],
+			[
+				"att",
+				"attendance_status"
+			],
+			[
 				"a",
 				"attendance_option"
 			],
@@ -494,72 +514,17 @@
 			[
 				"even",
 				"eventSources"
-			],
-			[
-				"ret",
-				"return_events"
-			],
-			[
-				"tim",
-				"timesheet_calendar"
-			],
-			[
-				"json",
-				"json_encode"
-			],
-			[
-				"jso",
-				"json_result"
-			],
-			[
-				"event",
-				"events"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "application/modules/admin/views/contract/contracts_form.php",
+			"file": "assets/css/my_style.css",
 			"settings":
 			{
-				"buffer_size": 2988,
+				"buffer_size": 1405,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/modules/admin/controllers/Contract.php",
-			"settings":
-			{
-				"buffer_size": 19127,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/config/ci_bootstrap_example.php",
-			"settings":
-			{
-				"buffer_size": 6447,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/modules/admin/models/Common_model.php",
-			"settings":
-			{
-				"buffer_size": 5134,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "system/helpers/form_helper.php",
-			"settings":
-			{
-				"buffer_size": 25592,
 				"line_ending": "Windows"
 			}
 		}
@@ -621,17 +586,44 @@
 		"/C/xampp/htdocs/codeigniter/application",
 		"/C/xampp/htdocs/codeigniter/application/config",
 		"/C/xampp/htdocs/codeigniter/application/controllers",
+		"/C/xampp/htdocs/codeigniter/application/logs",
 		"/C/xampp/htdocs/codeigniter/application/modules",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/config",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/models",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/views",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/_layouts",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/_partials",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/contract",
-		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/panel"
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/panel",
+		"/C/xampp/htdocs/codeigniter/application/views",
+		"/C/xampp/htdocs/codeigniter/application/views/_base",
+		"/C/xampp/htdocs/codeigniter/assets",
+		"/C/xampp/htdocs/codeigniter/assets/css",
+		"/C/xampp/htdocs/codeigniter/assets/dist",
+		"/C/xampp/htdocs/codeigniter/assets/dist/images",
+		"/C/xampp/htdocs/codeigniter/harviacode",
+		"/C/xampp/htdocs/codeigniter/harviacode/core"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/config/ci_bootstrap.php",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/_layouts/default.php",
+		"/C/xampp/htdocs/codeigniter/assets/css/main_style.css",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers/Contract.php",
+		"/C/xampp/htdocs/codeigniter/harviacode/core/create_controller.php",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers/Login.php",
+		"/C/xampp/htdocs/codeigniter/assets/css/my_style.css",
+		"/C/xampp/htdocs/codeigniter/application/views/_base/head.php",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/contract/contracts_form.php",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/models/Common_model.php",
+		"/C/xampp/htdocs/codeigniter/application/third_party/MX/Controller.php",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/config/form_validation.php",
+		"/C/xampp/htdocs/codeigniter/system/helpers/form_helper.php",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers/User.php",
+		"/C/xampp/htdocs/codeigniter/application/logs/log-2018-08-09.php",
+		"/C/xampp/htdocs/codeigniter/codeigniter.sublime-project",
 		"/C/xampp/htdocs/codeigniter/application/helpers/MY_url_helper.php",
 		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Sto_product.php",
 		"/C/xampp/htdocs/fmcg/application/modules/admin/views/product/products_form.php",
@@ -743,23 +735,7 @@
 		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store/stores_list.php",
 		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store_categorie/store_categories_list.php",
 		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store_category/store_categorys_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store_price/store_prices_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store_pricecategorie/store_pricecategories_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store_product/store_products_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/ref_pricecategorie/ref_pricecategories_list.php",
-		"/C/xampp/htdocs/fmcg/assets/dist/admin/glo_product.js",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_product/glo_products_update.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Glo_prodcategorie.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Contract.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Distributor.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Glo_product.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Glo_subprodcategories.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Ref_district.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Ref_pricecategorie.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Store.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Store_categorie.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Store_price.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/controllers/Store_pricecategorie.php"
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store_price/store_prices_list.php"
 	],
 	"find":
 	{
@@ -778,6 +754,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"xls",
 			"radio",
 			"form_open_multipart",
 			"upload"
@@ -798,153 +775,37 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "application/modules/admin/views/contract/contracts_form.php",
+					"file": "assets/css/my_style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2988,
+						"buffer_size": 1405,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2251,
-								2251
+								1393,
+								1393
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 182.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "application/modules/admin/controllers/Contract.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 19127,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9622,
-								9622
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3645.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "application/config/ci_bootstrap_example.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 6447,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 135.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "application/modules/admin/models/Common_model.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5134,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4854,
-								4854
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2527.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "system/helpers/form_helper.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 25592,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								13446,
-								13446
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 7973.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -1210,6 +1071,60 @@
 	"selected_group": 0,
 	"settings":
 	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"14":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"15":
+				{
+					"group": 0,
+					"index": 1
+				},
+				"16":
+				{
+					"group": 0,
+					"index": 3
+				},
+				"17":
+				{
+					"group": 0,
+					"index": 4
+				},
+				"48":
+				{
+					"group": 0,
+					"index": 2
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
 	},
 	"show_minimap": true,
 	"show_open_files": false,

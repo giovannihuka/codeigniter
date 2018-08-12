@@ -22,3 +22,5 @@ application/modules/admin/config/pagination.php
 harviacode/output/
 
 .htaccess
+codeigniter.sublime-project
+codeigniter.sublime-workspace

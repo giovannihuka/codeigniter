@@ -64,6 +64,7 @@ $string .="\n\n    private \$script = array(
 $string .="\n\n    private \$stylesheet = array(
         // 'assets/datatables/DataTables-1.10.16/css/jquery.dataTables.min.css',
         'assets/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css',
+        'assets/jquery-ui-1.12.1.custom/jquery-ui.css',
     );";
 
 $string .= "\n\n    private \$datepicker_script = array(
@@ -300,6 +301,7 @@ $string_create = "
         \$userid = \$this->ion_auth->get_user_id();
         \$username = \$this->ion_auth->get_user_name();
         \$contractid = \$this->ion_auth->get_contract_id();
+        \$usergroup = \$this->ion_auth->get_users_groups($user->id)->row()->name;
         
         if (\$form->validate())
         {\n";
@@ -316,8 +318,16 @@ $string_create .= "
                 (\n";
             
             foreach ($non_pk as $row) {
-                if (!in_array($row['column_name'], $additional_field_time) && !in_array($row['column_name'], $additional_field_id) && !in_array($row['column_name'], $field_name)) {
-                    $string_create .= "\t\t\t\t\t'". $row['column_name'] ."' => $". $row['column_name'] .",\n";
+                if (!in_array($row['column_name'], $additional_field_time) && !in_array($row['column_name'], $additional_field_id) && !in_array($row['column_name'], $field_name)) 
+                {
+                    if (strpos($row['column_name'],'status_data') || strpos($row['column_name'],'status_data') !== false) 
+                    {
+                        $string_create .= "\t\t\t\t\t'". $row['column_name'] ."' => $". $row['column_name'] .", // '1' = Data Baru; '2' = Aktif; '3' = Tidak Aktif\n";
+                    }
+                    else
+                    {
+                        $string_create .= "\t\t\t\t\t'". $row['column_name'] ."' => $". $row['column_name'] .",\n";
+                    }
                 } 
                 elseif (in_array($row['column_name'], $additional_field_time)) 
                 {
@@ -367,6 +377,7 @@ $string_update .= "
         \$userid = \$this->ion_auth->get_user_id();
         \$username = \$this->ion_auth->get_user_name();
         \$contractid = \$this->ion_auth->get_contract_id();
+        \$usergroup = \$this->ion_auth->get_users_groups($user->id)->row()->name;
 
         if (\$form->validate())
         {\n";

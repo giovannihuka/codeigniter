@@ -154,24 +154,24 @@ class Contract extends Admin_Controller
 
         $kolomhead = 0;
         xlsWriteLabel($tablehead, $kolomhead++, "No");
-	xlsWriteLabel($tablehead, $kolomhead++, "Company Name");
-	xlsWriteLabel($tablehead, $kolomhead++, "Company Status");
-	xlsWriteLabel($tablehead, $kolomhead++, "Db Name");
-	xlsWriteLabel($tablehead, $kolomhead++, "Server Ip");
-	xlsWriteLabel($tablehead, $kolomhead++, "Pic Name");
-	xlsWriteLabel($tablehead, $kolomhead++, "Company Address");
-	xlsWriteLabel($tablehead, $kolomhead++, "Company Phone1");
-	xlsWriteLabel($tablehead, $kolomhead++, "Company Phone2");
-	xlsWriteLabel($tablehead, $kolomhead++, "Pic Phone");
-	xlsWriteLabel($tablehead, $kolomhead++, "Email Address");
-	xlsWriteLabel($tablehead, $kolomhead++, "Contract Date");
-	xlsWriteLabel($tablehead, $kolomhead++, "Start Date");
-	xlsWriteLabel($tablehead, $kolomhead++, "Terminate Date");
-	xlsWriteLabel($tablehead, $kolomhead++, "Status Data");
-	xlsWriteLabel($tablehead, $kolomhead++, "Create Userid");
-	xlsWriteLabel($tablehead, $kolomhead++, "Update Userid");
-	xlsWriteLabel($tablehead, $kolomhead++, "Create Time");
-	xlsWriteLabel($tablehead, $kolomhead++, "Update Time");
+    	xlsWriteLabel($tablehead, $kolomhead++, "Company Name");
+    	xlsWriteLabel($tablehead, $kolomhead++, "Company Status");
+    	xlsWriteLabel($tablehead, $kolomhead++, "Db Name");
+    	xlsWriteLabel($tablehead, $kolomhead++, "Server Ip");
+    	xlsWriteLabel($tablehead, $kolomhead++, "Pic Name");
+    	xlsWriteLabel($tablehead, $kolomhead++, "Company Address");
+    	xlsWriteLabel($tablehead, $kolomhead++, "Company Phone1");
+    	xlsWriteLabel($tablehead, $kolomhead++, "Company Phone2");
+    	xlsWriteLabel($tablehead, $kolomhead++, "Pic Phone");
+    	xlsWriteLabel($tablehead, $kolomhead++, "Email Address");
+    	xlsWriteLabel($tablehead, $kolomhead++, "Contract Date");
+    	xlsWriteLabel($tablehead, $kolomhead++, "Start Date");
+    	xlsWriteLabel($tablehead, $kolomhead++, "Terminate Date");
+    	xlsWriteLabel($tablehead, $kolomhead++, "Status Data");
+    	xlsWriteLabel($tablehead, $kolomhead++, "Create Userid");
+    	xlsWriteLabel($tablehead, $kolomhead++, "Update Userid");
+    	xlsWriteLabel($tablehead, $kolomhead++, "Create Time");
+    	xlsWriteLabel($tablehead, $kolomhead++, "Update Time");
 
 	foreach ($this->Contract_model->get_all() as $data) {
             $kolombody = 0;
