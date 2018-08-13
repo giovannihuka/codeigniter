@@ -1,5 +1,5 @@
 <header class="main-header">
-	<a href="" class="logo visible-lg"><b><?php echo $site_name; ?></b></a>
+	<a href="" class="logo visible-sm visible-md visible-lg"><b><?php echo $site_name; ?></b></a>
 	<nav class="navbar navbar-static-top" role="navigation">
 		<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
 			<span class="sr-only">Toggle navigation</span>

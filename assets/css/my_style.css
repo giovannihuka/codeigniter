@@ -21,6 +21,12 @@
     border:1px solid black;
 }
 
+.main-header .sidebar-toggle
+{
+    padding: 10px 15px 10px 15px;
+    font-size: 21px;
+}
+
 @media (max-width: 640px) {
     .login-page {
         background-image: none; 
