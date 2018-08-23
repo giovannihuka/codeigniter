@@ -93,6 +93,11 @@ $config['ci_bootstrap'] = array(
 			'url'		=> 'contract',
 			'icon'		=> 'fa fa-television',
 		),
+		'logviewer' => array(
+			'name'		=> 'Log Viewer',
+			'url'		=> 'log',
+			'icon'		=> 'fa fa-heartbeat',
+		),
 		'util' => array(
 			'name'		=> 'Utilities',
 			'url'		=> 'util',

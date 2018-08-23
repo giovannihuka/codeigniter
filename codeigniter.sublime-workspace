@@ -519,15 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "assets/css/my_style.css",
-			"settings":
-			{
-				"buffer_size": 1405,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -591,34 +582,47 @@
 		"/C/xampp/htdocs/codeigniter/application/modules/admin",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/config",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/libraries",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/models",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/views",
-		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/_layouts",
-		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/_partials",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/contract",
-		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/panel",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/log",
 		"/C/xampp/htdocs/codeigniter/application/views",
 		"/C/xampp/htdocs/codeigniter/application/views/_base",
 		"/C/xampp/htdocs/codeigniter/assets",
 		"/C/xampp/htdocs/codeigniter/assets/css",
 		"/C/xampp/htdocs/codeigniter/assets/dist",
+		"/C/xampp/htdocs/codeigniter/assets/dist/admin",
 		"/C/xampp/htdocs/codeigniter/assets/dist/images",
 		"/C/xampp/htdocs/codeigniter/harviacode",
 		"/C/xampp/htdocs/codeigniter/harviacode/core"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers/Log.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/config/ci_bootstrap.php",
+		"/C/xampp/htdocs/codeigniter/assets/dist/admin/log_viewer.js",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/log/logviewer.php",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/libraries/Log_library.php",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/logviewer.php",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers/Logviewer.php",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/libraries/Logviewer_lib.php",
+		"/C/xampp/htdocs/codeigniter/application/third_party/MX/Loader.php",
+		"/C/xampp/htdocs/codeigniter/application/third_party/MX/Controller.php",
+		"/C/xampp/htdocs/codeigniter/assets/css/my_style.css",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/_partials/navbar.php",
+		"/C/xampp/htdocs/codeigniter/application/config/config.php",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/libraries/Logviewer.php",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers/CILogViewer.php",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/logs.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/_layouts/default.php",
 		"/C/xampp/htdocs/codeigniter/assets/css/main_style.css",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers/Contract.php",
 		"/C/xampp/htdocs/codeigniter/harviacode/core/create_controller.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers/Login.php",
-		"/C/xampp/htdocs/codeigniter/assets/css/my_style.css",
 		"/C/xampp/htdocs/codeigniter/application/views/_base/head.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/contract/contracts_form.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/models/Common_model.php",
-		"/C/xampp/htdocs/codeigniter/application/third_party/MX/Controller.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/config/form_validation.php",
 		"/C/xampp/htdocs/codeigniter/system/helpers/form_helper.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers/User.php",
@@ -722,20 +726,7 @@
 		"/C/xampp/htdocs/fmcg/application/models/Dev_table_model.php",
 		"/C/xampp/htdocs/fmcg/assets/js/jquery-3.3.1.js",
 		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_prod_copy/glo_prod_copy_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/contract/contracts_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/distributor/distributors_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_prodcategorie/glo_prodcategories_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_product/glo_products_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_subprodcategories/glo_subprodcategoriess_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_subprodcategory/glo_subprodcategorys_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/global_product/glo_prod_copy_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/product/store_product_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/ref_district/ref_districts_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/ref_principal/ref_principals_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store/stores_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store_categorie/store_categories_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store_category/store_categorys_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/store_price/store_prices_list.php"
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/contract/contracts_list.php"
 	],
 	"find":
 	{
@@ -754,6 +745,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sess_use_",
+			"$config['sess_use_database']",
+			"$config['sess_match_useragent']",
+			"$config['sess_match_ip']",
 			"xls",
 			"radio",
 			"form_open_multipart",
@@ -775,39 +770,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "assets/css/my_style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1405,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1393,
-								1393
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 135.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1076,30 +1040,35 @@
 			"hide_conflict": false,
 			"restore_index":
 			{
-				"14":
+				"217":
 				{
 					"group": 0,
 					"index": 0
 				},
-				"15":
+				"218":
 				{
 					"group": 0,
-					"index": 1
+					"index": 2
 				},
-				"16":
+				"219":
 				{
 					"group": 0,
 					"index": 3
 				},
-				"17":
+				"220":
 				{
 					"group": 0,
 					"index": 4
 				},
-				"48":
+				"237":
 				{
 					"group": 0,
-					"index": 2
+					"index": 1
+				},
+				"285":
+				{
+					"group": 0,
+					"index": 5
 				}
 			},
 			"restore_layout":
