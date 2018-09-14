@@ -519,6 +519,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "application/views/login.php",
+			"settings":
+			{
+				"buffer_size": 921,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -578,15 +586,6 @@
 		"/C/xampp/htdocs/codeigniter/application/config",
 		"/C/xampp/htdocs/codeigniter/application/controllers",
 		"/C/xampp/htdocs/codeigniter/application/logs",
-		"/C/xampp/htdocs/codeigniter/application/modules",
-		"/C/xampp/htdocs/codeigniter/application/modules/admin",
-		"/C/xampp/htdocs/codeigniter/application/modules/admin/config",
-		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers",
-		"/C/xampp/htdocs/codeigniter/application/modules/admin/libraries",
-		"/C/xampp/htdocs/codeigniter/application/modules/admin/models",
-		"/C/xampp/htdocs/codeigniter/application/modules/admin/views",
-		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/contract",
-		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/log",
 		"/C/xampp/htdocs/codeigniter/application/views",
 		"/C/xampp/htdocs/codeigniter/application/views/_base",
 		"/C/xampp/htdocs/codeigniter/assets",
@@ -599,6 +598,7 @@
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/codeigniter/application/config/ci_bootstrap.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers/Log.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/config/ci_bootstrap.php",
 		"/C/xampp/htdocs/codeigniter/assets/dist/admin/log_viewer.js",
@@ -725,8 +725,7 @@
 		"/C/xampp/htdocs/fmcg/application/logs/log-2018-06-28.php",
 		"/C/xampp/htdocs/fmcg/application/models/Dev_table_model.php",
 		"/C/xampp/htdocs/fmcg/assets/js/jquery-3.3.1.js",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_prod_copy/glo_prod_copy_list.php",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/contract/contracts_list.php"
+		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_prod_copy/glo_prod_copy_list.php"
 	],
 	"find":
 	{
@@ -770,14 +769,44 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "application/views/login.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 921,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 22.0
 	},
 	"input":
 	{

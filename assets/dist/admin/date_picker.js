@@ -8,6 +8,6 @@ $(function() {
     	todayHighlight: true,
     	changeMonth: true,
     	changeYear: true,
-        yearRange: '-20:+0',
+        yearRange: '-80:+0',
     });
 });

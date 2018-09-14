@@ -18,13 +18,53 @@
 .login-box-body
 {
     border-radius: 10px;
-    border:1px solid black;
+    /*border:2px solid rgba(255, 255, 0, 0.6);*/
 }
 
 .main-header .sidebar-toggle
 {
     padding: 10px 15px 10px 15px;
     font-size: 21px;
+}
+
+textarea
+{
+    resize: vertical;
+}
+
+div.ckeditor_val
+{
+    background-color: #eee;
+    border: 1px solid #ccc;
+    opacity: 1;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    color: #555;
+}
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*max-width: 560px;*/
+    height: 100%;
+    /*height: auto;*/
+    border: 0;
+}
+
+.navbar-nav>.user-menu>.dropdown-menu {
+/*    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    padding: 1px 0 0 0;
+    border-top-width: 0;*/
+    width: 180px;
 }
 
 @media (max-width: 640px) {
@@ -36,6 +76,15 @@
     {
         border-radius: 10px;
         border: none;
+    }
+    .navbar
+    {
+        position: fixed;
+    }
+
+    .content-header
+    {
+        padding-top: 60px;
     }
 }
 
@@ -58,3 +107,19 @@
         padding-top: 50px;
     }
 }
+
+@media (max-width: 991px)
+{
+    .navbar-custom-menu>.navbar-nav>li>.dropdown-menu 
+    {
+        right: 0%;
+    }
+}
+
+/*@media (max-width: 767px)
+{
+.skin-red .main-header .navbar .dropdown-menu li a 
+    {
+        color: #000; 
+    }
+}*/

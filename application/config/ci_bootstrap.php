@@ -43,8 +43,10 @@ $config['ci_bootstrap'] = array(
 	// Default stylesheets to embed at page head
 	'stylesheets' => array(
 		'screen' => array(
+			'assets/css/my_style.css',
 			'assets/dist/frontend/lib.min.css',
-			'assets/dist/frontend/app.min.css'
+			'assets/dist/frontend/app.min.css',
+			'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic',
 		)
 	),
 
@@ -53,30 +55,30 @@ $config['ci_bootstrap'] = array(
 	
 	// Multilingual settings
 	'languages' => array(
-		'default'		=> 'en',
-		'autoload'		=> array('general'),
-		'available'		=> array(
-			'en' => array(
-				'label'	=> 'English',
-				'value'	=> 'english'
-			),
-			'id' => array(
-				'label'	=> 'Indonesian',
-				'value'	=> 'indonesian'
-			),
-			'zh' => array(
-				'label'	=> '繁體中文',
-				'value'	=> 'traditional-chinese'
-			),
-			'cn' => array(
-				'label'	=> '简体中文',
-				'value'	=> 'simplified-chinese'
-			),
-			'es' => array(
-				'label'	=> 'Español',
-				'value' => 'spanish'
-			)
-		)
+		// 'default'		=> 'en',
+		// 'autoload'		=> array('general'),
+		// 'available'		=> array(
+		// 	'en' => array(
+		// 		'label'	=> 'English',
+		// 		'value'	=> 'english'
+		// 	),
+		// 	'id' => array(
+		// 		'label'	=> 'Indonesian',
+		// 		'value'	=> 'indonesian'
+		// 	),
+		// 	'zh' => array(
+		// 		'label'	=> '繁體中文',
+		// 		'value'	=> 'traditional-chinese'
+		// 	),
+		// 	'cn' => array(
+		// 		'label'	=> '简体中文',
+		// 		'value'	=> 'simplified-chinese'
+		// 	),
+		// 	'es' => array(
+		// 		'label'	=> 'Español',
+		// 		'value' => 'spanish'
+		// 	)
+		// )
 	),
 
 	// Google Analytics User ID
@@ -88,15 +90,15 @@ $config['ci_bootstrap'] = array(
 			'name'		=> 'Home',
 			'url'		=> '',
 		),
-		'admin' => array(
-			'name'		=> 'Admin',
-			'url'		=> 'admin',
-			// 'target'	=> '_blank',
-		),
+		// 'admin' => array(
+		// 	'name'		=> 'Admin',
+		// 	'url'		=> 'admin',
+		// 	// 'target'	=> '_blank',
+		// ),
 	),
 
 	// Login page
-	'login_url' => '',
+	'login_url' => 'login',
 
 	// Restricted pages
 	'page_auth' => array(

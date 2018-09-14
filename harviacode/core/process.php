@@ -192,6 +192,7 @@ if (isset($_POST['generateall']))
     }
 
     $hasil[] = $hasil_config_pagination;
+    $hasil[] = $hasil_library_datatables;
     $hasil[] = $hasil_exportexcel;
     $hasil[] = $hasil_pdf;
 }

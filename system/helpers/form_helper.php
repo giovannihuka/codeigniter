@@ -436,7 +436,7 @@ if ( ! function_exists('form_dropdown'))
 
 		$read_data = ($disabled == 0)? '':" disabled ";
 
-		$form = '<select '.rtrim(_parse_form_attributes($data, $defaults)).$extra.$multiple.$call_js.$read_data.">\n";
+		$form = '<select style="width: 100%;" '.rtrim(_parse_form_attributes($data, $defaults)).$extra.$multiple.$call_js.$read_data.">\n";
 
 		foreach ($options as $key => $val)
 		{
