@@ -520,10 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "application/views/login.php",
+			"file": "assets/css/my_style.css",
 			"settings":
 			{
-				"buffer_size": 921,
+				"buffer_size": 2495,
 				"line_ending": "Windows"
 			}
 		}
@@ -586,18 +586,30 @@
 		"/C/xampp/htdocs/codeigniter/application/config",
 		"/C/xampp/htdocs/codeigniter/application/controllers",
 		"/C/xampp/htdocs/codeigniter/application/logs",
+		"/C/xampp/htdocs/codeigniter/application/third_party",
+		"/C/xampp/htdocs/codeigniter/application/third_party/ion_auth",
+		"/C/xampp/htdocs/codeigniter/application/third_party/ion_auth/controllers",
+		"/C/xampp/htdocs/codeigniter/application/third_party/ion_auth/views_sample",
+		"/C/xampp/htdocs/codeigniter/application/third_party/ion_auth/views_sample/auth",
+		"/C/xampp/htdocs/codeigniter/application/third_party/ion_auth/views_sample/auth/email",
 		"/C/xampp/htdocs/codeigniter/application/views",
 		"/C/xampp/htdocs/codeigniter/application/views/_base",
+		"/C/xampp/htdocs/codeigniter/application/views/_partials",
 		"/C/xampp/htdocs/codeigniter/assets",
 		"/C/xampp/htdocs/codeigniter/assets/css",
 		"/C/xampp/htdocs/codeigniter/assets/dist",
 		"/C/xampp/htdocs/codeigniter/assets/dist/admin",
 		"/C/xampp/htdocs/codeigniter/assets/dist/images",
 		"/C/xampp/htdocs/codeigniter/harviacode",
-		"/C/xampp/htdocs/codeigniter/harviacode/core"
+		"/C/xampp/htdocs/codeigniter/harviacode/core",
+		"/C/xampp/htdocs/codeigniter/system",
+		"/C/xampp/htdocs/codeigniter/system/language",
+		"/C/xampp/htdocs/codeigniter/system/language/indonesian"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/codeigniter/application/views/_partials/navbar.php",
+		"/C/xampp/htdocs/codeigniter/system/helpers/language_helper.php",
 		"/C/xampp/htdocs/codeigniter/application/config/ci_bootstrap.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers/Log.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/config/ci_bootstrap.php",
@@ -723,9 +735,7 @@
 		"/C/xampp/htdocs/fmcg/application/vendor/league/csv/src/Config/Output.php",
 		"/C/xampp/htdocs/fmcg/system/libraries/Javascript.php",
 		"/C/xampp/htdocs/fmcg/application/logs/log-2018-06-28.php",
-		"/C/xampp/htdocs/fmcg/application/models/Dev_table_model.php",
-		"/C/xampp/htdocs/fmcg/assets/js/jquery-3.3.1.js",
-		"/C/xampp/htdocs/fmcg/application/modules/admin/views/glo_prod_copy/glo_prod_copy_list.php"
+		"/C/xampp/htdocs/fmcg/application/models/Dev_table_model.php"
 	],
 	"find":
 	{
@@ -774,28 +784,29 @@
 			[
 				{
 					"buffer": 0,
-					"file": "application/views/login.php",
+					"file": "assets/css/my_style.css",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 921,
+						"buffer_size": 2495,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								981,
+								962
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1470.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

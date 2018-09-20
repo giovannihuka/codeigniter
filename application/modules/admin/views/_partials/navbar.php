@@ -7,6 +7,7 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</a>
+		<a href="" class="navbar-custom-title" role="button"><b><?php echo $site_name; ?></b></a>
 		<div class="navbar-custom-menu"> <!-- hidden-sm hidden-xs"> -->
 			<ul class="nav navbar-nav">
 				<li class="dropdown user user-menu">
