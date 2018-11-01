@@ -19,7 +19,7 @@ application/config/database.php
 application/config/production/database.php
 application/config/testing/database.php
 application/modules/admin/config/pagination.php
-harviacode/output/
+harviacode/output/*
 
 .htaccess
 codeigniter.sublime-project

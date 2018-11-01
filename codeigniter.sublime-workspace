@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"qu",
+				"query_string"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"vis",
+				"visible-sm"
+			],
+			[
+				"hidd",
+				"hidden-sm"
+			],
+			[
+				"navb",
+				"navbar-custom-menu"
+			],
+			[
 				"padd",
 				"padding-top"
 			],
@@ -494,36 +514,53 @@
 			[
 				"ti",
 				"title"
-			],
-			[
-				"bo",
-				"backgroundColor"
-			],
-			[
-				"print",
-				"print_r"
-			],
-			[
-				"json_",
-				"json_encode"
-			],
-			[
-				"all",
-				"allDay"
-			],
-			[
-				"even",
-				"eventSources"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "assets/css/my_style.css",
+			"file": "application/config/database.php",
 			"settings":
 			{
-				"buffer_size": 2495,
+				"buffer_size": 5025,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/modules/admin/models/Ngehe_model.php",
+			"settings":
+			{
+				"buffer_size": 6122,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/modules/admin/controllers/Ngehe.php",
+			"settings":
+			{
+				"buffer_size": 19180,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/dist/admin/ngehe.js",
+			"settings":
+			{
+				"buffer_size": 2727,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/modules/admin/views/ngehe/ngehe_list.php",
+			"settings":
+			{
+				"buffer_size": 1521,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -586,28 +623,34 @@
 		"/C/xampp/htdocs/codeigniter/application/config",
 		"/C/xampp/htdocs/codeigniter/application/controllers",
 		"/C/xampp/htdocs/codeigniter/application/logs",
-		"/C/xampp/htdocs/codeigniter/application/third_party",
-		"/C/xampp/htdocs/codeigniter/application/third_party/ion_auth",
-		"/C/xampp/htdocs/codeigniter/application/third_party/ion_auth/controllers",
-		"/C/xampp/htdocs/codeigniter/application/third_party/ion_auth/views_sample",
-		"/C/xampp/htdocs/codeigniter/application/third_party/ion_auth/views_sample/auth",
-		"/C/xampp/htdocs/codeigniter/application/third_party/ion_auth/views_sample/auth/email",
+		"/C/xampp/htdocs/codeigniter/application/models",
+		"/C/xampp/htdocs/codeigniter/application/modules",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/models",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/views",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/ngehe",
 		"/C/xampp/htdocs/codeigniter/application/views",
-		"/C/xampp/htdocs/codeigniter/application/views/_base",
-		"/C/xampp/htdocs/codeigniter/application/views/_partials",
 		"/C/xampp/htdocs/codeigniter/assets",
 		"/C/xampp/htdocs/codeigniter/assets/css",
 		"/C/xampp/htdocs/codeigniter/assets/dist",
 		"/C/xampp/htdocs/codeigniter/assets/dist/admin",
-		"/C/xampp/htdocs/codeigniter/assets/dist/images",
 		"/C/xampp/htdocs/codeigniter/harviacode",
-		"/C/xampp/htdocs/codeigniter/harviacode/core",
+		"/C/xampp/htdocs/codeigniter/harviacode/output",
+		"/C/xampp/htdocs/codeigniter/harviacode/output/controllers",
+		"/C/xampp/htdocs/codeigniter/harviacode/output/models",
+		"/C/xampp/htdocs/codeigniter/harviacode/output/views",
+		"/C/xampp/htdocs/codeigniter/harviacode/output/views/contract",
 		"/C/xampp/htdocs/codeigniter/system",
 		"/C/xampp/htdocs/codeigniter/system/language",
 		"/C/xampp/htdocs/codeigniter/system/language/indonesian"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/codeigniter/application/logs/log-2018-10-29.php",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/models/Common_model.php",
+		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/_partials/navbar.php",
+		"/C/xampp/htdocs/codeigniter/assets/css/my_style.css",
 		"/C/xampp/htdocs/codeigniter/application/views/_partials/navbar.php",
 		"/C/xampp/htdocs/codeigniter/system/helpers/language_helper.php",
 		"/C/xampp/htdocs/codeigniter/application/config/ci_bootstrap.php",
@@ -621,8 +664,6 @@
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/libraries/Logviewer_lib.php",
 		"/C/xampp/htdocs/codeigniter/application/third_party/MX/Loader.php",
 		"/C/xampp/htdocs/codeigniter/application/third_party/MX/Controller.php",
-		"/C/xampp/htdocs/codeigniter/assets/css/my_style.css",
-		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/_partials/navbar.php",
 		"/C/xampp/htdocs/codeigniter/application/config/config.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/libraries/Logviewer.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers/CILogViewer.php",
@@ -634,7 +675,6 @@
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers/Login.php",
 		"/C/xampp/htdocs/codeigniter/application/views/_base/head.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/views/contract/contracts_form.php",
-		"/C/xampp/htdocs/codeigniter/application/modules/admin/models/Common_model.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/config/form_validation.php",
 		"/C/xampp/htdocs/codeigniter/system/helpers/form_helper.php",
 		"/C/xampp/htdocs/codeigniter/application/modules/admin/controllers/User.php",
@@ -734,8 +774,7 @@
 		"/C/xampp/htdocs/fmcg/harviacode/core/harviacode.php",
 		"/C/xampp/htdocs/fmcg/application/vendor/league/csv/src/Config/Output.php",
 		"/C/xampp/htdocs/fmcg/system/libraries/Javascript.php",
-		"/C/xampp/htdocs/fmcg/application/logs/log-2018-06-28.php",
-		"/C/xampp/htdocs/fmcg/application/models/Dev_table_model.php"
+		"/C/xampp/htdocs/fmcg/application/logs/log-2018-06-28.php"
 	],
 	"find":
 	{
@@ -746,6 +785,7 @@
 		"height": 105.0,
 		"where_history":
 		[
+			"C:\\xampp\\htdocs\\codeigniter\\",
 			""
 		]
 	},
@@ -754,6 +794,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"set_time_limit",
+			"navbar-custom-menu",
 			"sess_use_",
 			"$config['sess_use_database']",
 			"$config['sess_match_useragent']",
@@ -779,34 +821,153 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "assets/css/my_style.css",
-					"semi_transient": true,
+					"file": "application/config/database.php",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2495,
+						"buffer_size": 5025,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								981,
-								962
+								4625,
+								4625
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 172.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/modules/admin/models/Ngehe_model.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6122,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								697,
+								2758
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1470.0,
+						"translation.y": 697.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/modules/admin/controllers/Ngehe.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19180,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2331,
+								2331
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/dist/admin/ngehe.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2727,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2027,
+								2027
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/modules/admin/views/ngehe/ngehe_list.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1521,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1470,
+								1447
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -817,7 +978,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 22.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -1080,35 +1241,35 @@
 			"hide_conflict": false,
 			"restore_index":
 			{
-				"217":
+				"48":
 				{
 					"group": 0,
 					"index": 0
 				},
-				"218":
+				"51":
 				{
 					"group": 0,
 					"index": 2
 				},
-				"219":
+				"67":
 				{
 					"group": 0,
 					"index": 3
 				},
-				"220":
+				"68":
 				{
 					"group": 0,
 					"index": 4
 				},
-				"237":
-				{
-					"group": 0,
-					"index": 1
-				},
-				"285":
+				"70":
 				{
 					"group": 0,
 					"index": 5
+				},
+				"91":
+				{
+					"group": 0,
+					"index": 1
 				}
 			},
 			"restore_layout":
